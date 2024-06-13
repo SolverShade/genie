@@ -1,0 +1,3 @@
+/home/powerbox/source/repos/repos/cmakeexample/CMakeFiles/cmakeexample.dir
+/home/powerbox/source/repos/repos/cmakeexample/CMakeFiles/edit_cache.dir
+/home/powerbox/source/repos/repos/cmakeexample/CMakeFiles/rebuild_cache.dir
