@@ -1,7 +1,15 @@
 cmake_minimum_required(VERSION 3.10) 
-project(cmakeexample)
 
+project(genie)
+
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-add_executable(cmakeexample src/main.cpp)
+find_package( OpenGL REQUIRED )
+include_directories( ${OPENGL_INCLUDE_DIRS} )
+
+add_subdirectory("${CMAKE_SOURCE_DIR}/libs/glfw")
+
+add_executable(genie "${CMAKE_SOURCE_DIR}/src/main.cpp")
+target_link_libraries(genie glfw)
