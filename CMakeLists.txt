@@ -6,10 +6,11 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-find_package( OpenGL REQUIRED )
-include_directories( ${OPENGL_INCLUDE_DIRS} )
-
-add_subdirectory("${CMAKE_SOURCE_DIR}/libs/glfw")
+find_package(glfw3 CONFIG REQUIRED)
+find_package(imgui CONFIG REQUIRED)
 
 add_executable(genie "${CMAKE_SOURCE_DIR}/src/main.cpp")
-target_link_libraries(genie glfw)
+target_link_libraries(genie 
+  glfw
+  imgui::imgui
+)

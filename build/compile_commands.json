@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/powerbox/source/repos/repos/genie/build",
+  "command": "/usr/bin/c++ -isystem /home/powerbox/source/repos/repos/genie/build/vcpkg_installed/x64-linux/include -std=gnu++17 -o CMakeFiles/genie.dir/src/main.cpp.o -c /home/powerbox/source/repos/repos/genie/src/main.cpp",
+  "file": "/home/powerbox/source/repos/repos/genie/src/main.cpp"
+}
+]

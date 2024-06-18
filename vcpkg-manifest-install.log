@@ -1,0 +1,29 @@
+waiting to take filesystem lock on /home/powerbox/source/tools/vcpkg/.vcpkg-root...
+Detecting compiler hash for triplet x64-linux...
+Compiler found: /usr/bin/c++
+The following packages will be rebuilt:
+    imgui[core,glfw-binding]:x64-linux@1.90.7 -- /home/powerbox/.cache/vcpkg/registries/git-trees/2010bff23a4b5a3c9e4c1f174460abcc659ef681
+Restored 1 package(s) from /home/powerbox/.cache/vcpkg/archives in 86.7 ms. Use --debug to see more details.
+Removing 1/2 imgui:x64-linux
+Elapsed time to handle imgui:x64-linux: 96.5 ms
+Installing 2/2 imgui[core,glfw-binding]:x64-linux@1.90.7...
+Elapsed time to handle imgui:x64-linux: 228 ms
+imgui:x64-linux package ABI: 6d8531ae7d45ad9917ce14c454089755df526f7219f2d9d567803a3184a1e995
+Total install time: 325 ms
+glfw3 provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(glfw3 CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE glfw)
+
+glfw3 provides pkg-config modules:
+
+  # A multi-platform library for OpenGL, window and input
+  glfw3
+
+imgui provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(imgui CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE imgui::imgui)
+
