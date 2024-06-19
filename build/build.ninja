@@ -12,7 +12,7 @@
 
 # =============================================================================
 # Project: genie
-# Configurations: 
+# Configurations: Debug
 # =============================================================================
 
 #############################################
@@ -20,6 +20,11 @@
 
 ninja_required_version = 1.5
 
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
 # =============================================================================
 # Include auxiliary files.
 
@@ -44,30 +49,30 @@ cmake_ninja_workdir = /home/powerbox/source/repos/repos/genie/build/
 
 build cmake_object_order_depends_target_genie: phony || CMakeFiles/genie.dir
 
-build CMakeFiles/genie.dir/src/main.cpp.o: CXX_COMPILER__genie_ /home/powerbox/source/repos/repos/genie/src/main.cpp || cmake_object_order_depends_target_genie
+build CMakeFiles/genie.dir/src/main.cpp.o: CXX_COMPILER__genie_Debug /home/powerbox/source/repos/repos/genie/src/main.cpp || cmake_object_order_depends_target_genie
   DEP_FILE = CMakeFiles/genie.dir/src/main.cpp.o.d
-  FLAGS = -std=gnu++17
+  FLAGS = -g -std=gnu++17
   INCLUDES = -I/home/powerbox/source/repos/repos/genie/src -isystem /home/powerbox/source/repos/repos/genie/build/vcpkg_installed/x64-linux/include
   OBJECT_DIR = CMakeFiles/genie.dir
   OBJECT_FILE_DIR = CMakeFiles/genie.dir/src
 
-build CMakeFiles/genie.dir/src/genie/GenieModel.cpp.o: CXX_COMPILER__genie_ /home/powerbox/source/repos/repos/genie/src/genie/GenieModel.cpp || cmake_object_order_depends_target_genie
+build CMakeFiles/genie.dir/src/genie/GenieModel.cpp.o: CXX_COMPILER__genie_Debug /home/powerbox/source/repos/repos/genie/src/genie/GenieModel.cpp || cmake_object_order_depends_target_genie
   DEP_FILE = CMakeFiles/genie.dir/src/genie/GenieModel.cpp.o.d
-  FLAGS = -std=gnu++17
+  FLAGS = -g -std=gnu++17
   INCLUDES = -I/home/powerbox/source/repos/repos/genie/src -isystem /home/powerbox/source/repos/repos/genie/build/vcpkg_installed/x64-linux/include
   OBJECT_DIR = CMakeFiles/genie.dir
   OBJECT_FILE_DIR = CMakeFiles/genie.dir/src/genie
 
-build CMakeFiles/genie.dir/src/genie/GenieView.cpp.o: CXX_COMPILER__genie_ /home/powerbox/source/repos/repos/genie/src/genie/GenieView.cpp || cmake_object_order_depends_target_genie
+build CMakeFiles/genie.dir/src/genie/GenieView.cpp.o: CXX_COMPILER__genie_Debug /home/powerbox/source/repos/repos/genie/src/genie/GenieView.cpp || cmake_object_order_depends_target_genie
   DEP_FILE = CMakeFiles/genie.dir/src/genie/GenieView.cpp.o.d
-  FLAGS = -std=gnu++17
+  FLAGS = -g -std=gnu++17
   INCLUDES = -I/home/powerbox/source/repos/repos/genie/src -isystem /home/powerbox/source/repos/repos/genie/build/vcpkg_installed/x64-linux/include
   OBJECT_DIR = CMakeFiles/genie.dir
   OBJECT_FILE_DIR = CMakeFiles/genie.dir/src/genie
 
-build CMakeFiles/genie.dir/src/test/t.cpp.o: CXX_COMPILER__genie_ /home/powerbox/source/repos/repos/genie/src/test/t.cpp || cmake_object_order_depends_target_genie
+build CMakeFiles/genie.dir/src/test/t.cpp.o: CXX_COMPILER__genie_Debug /home/powerbox/source/repos/repos/genie/src/test/t.cpp || cmake_object_order_depends_target_genie
   DEP_FILE = CMakeFiles/genie.dir/src/test/t.cpp.o.d
-  FLAGS = -std=gnu++17
+  FLAGS = -g -std=gnu++17
   INCLUDES = -I/home/powerbox/source/repos/repos/genie/src -isystem /home/powerbox/source/repos/repos/genie/build/vcpkg_installed/x64-linux/include
   OBJECT_DIR = CMakeFiles/genie.dir
   OBJECT_FILE_DIR = CMakeFiles/genie.dir/src/test
@@ -80,7 +85,8 @@ build CMakeFiles/genie.dir/src/test/t.cpp.o: CXX_COMPILER__genie_ /home/powerbox
 #############################################
 # Link the executable genie
 
-build genie: CXX_EXECUTABLE_LINKER__genie_ CMakeFiles/genie.dir/src/main.cpp.o CMakeFiles/genie.dir/src/genie/GenieModel.cpp.o CMakeFiles/genie.dir/src/genie/GenieView.cpp.o CMakeFiles/genie.dir/src/test/t.cpp.o | vcpkg_installed/x64-linux/debug/lib/libglfw3.a vcpkg_installed/x64-linux/debug/lib/libimguid.a vcpkg_installed/x64-linux/debug/lib/libglfw3.a /usr/lib/x86_64-linux-gnu/librt.a /usr/lib/x86_64-linux-gnu/libm.so
+build genie: CXX_EXECUTABLE_LINKER__genie_Debug CMakeFiles/genie.dir/src/main.cpp.o CMakeFiles/genie.dir/src/genie/GenieModel.cpp.o CMakeFiles/genie.dir/src/genie/GenieView.cpp.o CMakeFiles/genie.dir/src/test/t.cpp.o | vcpkg_installed/x64-linux/debug/lib/libglfw3.a vcpkg_installed/x64-linux/debug/lib/libimguid.a vcpkg_installed/x64-linux/debug/lib/libglfw3.a /usr/lib/x86_64-linux-gnu/librt.a /usr/lib/x86_64-linux-gnu/libm.so
+  FLAGS = -g
   LINK_LIBRARIES = vcpkg_installed/x64-linux/debug/lib/libglfw3.a  vcpkg_installed/x64-linux/debug/lib/libimguid.a  vcpkg_installed/x64-linux/debug/lib/libglfw3.a  /usr/lib/x86_64-linux-gnu/librt.a  -lm  -ldl
   OBJECT_DIR = CMakeFiles/genie.dir
   POST_BUILD = :

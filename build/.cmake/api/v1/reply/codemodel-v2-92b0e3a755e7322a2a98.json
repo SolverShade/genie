@@ -6,7 +6,7 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-f5ebdc15457944623624.json",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.20"
@@ -19,7 +19,7 @@
 					]
 				}
 			],
-			"name" : "",
+			"name" : "Debug",
 			"projects" : 
 			[
 				{
@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "genie::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-genie-627de0ab409d9dc6701a.json",
+					"jsonFile" : "target-genie-Debug-afb748a768e70ecb4737.json",
 					"name" : "genie",
 					"projectIndex" : 0
 				}
