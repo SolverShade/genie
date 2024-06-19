@@ -1,13 +1,14 @@
-#include <iostream> 
+#include "test/t.h"
 #include <GLFW/glfw3.h>
-#include "example.cpp"
+#include <genie/GenieView.hpp>
+#include <iostream>
 
 int main() {
-    std::cout << "Hello, Uncle Leo!" << std::endl;
+  std::cout << "Hello, Uncle Leo!" << std::endl;
 
-    Example a; 
-    a.create_window();
+  // GenieView genieView = GenieView(640, 480, "my_window");
+  T t = T();
+  t.sayHello();
 
-    return 0; 
+  return 0;
 }
-

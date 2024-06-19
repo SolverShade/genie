@@ -26,7 +26,15 @@ Version: 1.90.7
 Depends: vcpkg-cmake, vcpkg-cmake-config
 Architecture: x64-linux
 Multi-Arch: same
-Abi: 21c9fa6558e59faebf80d0385372e4354ba13e5e432667e75cde33f4bd4d1be3
+Abi: 6d8531ae7d45ad9917ce14c454089755df526f7219f2d9d567803a3184a1e995
 Description: Bloat-free Immediate Mode Graphical User interface for C++ with minimal dependencies.
+Status: install ok installed
+
+Package: imgui
+Feature: glfw-binding
+Depends: glfw3
+Architecture: x64-linux
+Multi-Arch: same
+Description: Make available GLFW binding
 Status: install ok installed
 
