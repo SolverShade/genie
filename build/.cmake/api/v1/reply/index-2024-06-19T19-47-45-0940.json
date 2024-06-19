@@ -26,7 +26,7 @@
 	"objects" : 
 	[
 		{
-			"jsonFile" : "codemodel-v2-92b0e3a755e7322a2a98.json",
+			"jsonFile" : "codemodel-v2-93beba64ca299defcbb1.json",
 			"kind" : "codemodel",
 			"version" : 
 			{
@@ -35,7 +35,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cache-v2-98072aebf2f4f36bbaa7.json",
+			"jsonFile" : "cache-v2-cfa7f43c264dcbeb51a7.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -44,7 +44,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cmakeFiles-v1-f21baa290a4fc54120ed.json",
+			"jsonFile" : "cmakeFiles-v1-420a50de441cc75d7ea1.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -55,7 +55,7 @@
 	],
 	"reply" : 
 	{
-		"client-abfecf6c-2197-45f4-b309-6b757d44a364" : 
+		"client-8b07ddd2-2761-4481-b1c6-5c62e8559448" : 
 		{
 			"query.json" : 
 			{
@@ -77,7 +77,7 @@
 				"responses" : 
 				[
 					{
-						"jsonFile" : "codemodel-v2-92b0e3a755e7322a2a98.json",
+						"jsonFile" : "codemodel-v2-93beba64ca299defcbb1.json",
 						"kind" : "codemodel",
 						"version" : 
 						{
@@ -86,7 +86,7 @@
 						}
 					},
 					{
-						"jsonFile" : "cache-v2-98072aebf2f4f36bbaa7.json",
+						"jsonFile" : "cache-v2-cfa7f43c264dcbeb51a7.json",
 						"kind" : "cache",
 						"version" : 
 						{
@@ -95,7 +95,58 @@
 						}
 					},
 					{
-						"jsonFile" : "cmakeFiles-v1-f21baa290a4fc54120ed.json",
+						"jsonFile" : "cmakeFiles-v1-420a50de441cc75d7ea1.json",
+						"kind" : "cmakeFiles",
+						"version" : 
+						{
+							"major" : 1,
+							"minor" : 0
+						}
+					}
+				]
+			}
+		},
+		"client-bd284024-0404-4623-96c9-d07c4e9e47b0" : 
+		{
+			"query.json" : 
+			{
+				"requests" : 
+				[
+					{
+						"kind" : "codemodel",
+						"version" : 2
+					},
+					{
+						"kind" : "cache",
+						"version" : 2
+					},
+					{
+						"kind" : "cmakeFiles",
+						"version" : 1
+					}
+				],
+				"responses" : 
+				[
+					{
+						"jsonFile" : "codemodel-v2-93beba64ca299defcbb1.json",
+						"kind" : "codemodel",
+						"version" : 
+						{
+							"major" : 2,
+							"minor" : 3
+						}
+					},
+					{
+						"jsonFile" : "cache-v2-cfa7f43c264dcbeb51a7.json",
+						"kind" : "cache",
+						"version" : 
+						{
+							"major" : 2,
+							"minor" : 0
+						}
+					},
+					{
+						"jsonFile" : "cmakeFiles-v1-420a50de441cc75d7ea1.json",
 						"kind" : "cmakeFiles",
 						"version" : 
 						{

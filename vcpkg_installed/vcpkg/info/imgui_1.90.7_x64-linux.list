@@ -6,6 +6,8 @@ x64-linux/include/
 x64-linux/include/imconfig.h
 x64-linux/include/imgui.h
 x64-linux/include/imgui_impl_glfw.h
+x64-linux/include/imgui_impl_opengl3.h
+x64-linux/include/imgui_impl_opengl3_loader.h
 x64-linux/include/imgui_internal.h
 x64-linux/include/imgui_stdlib.h
 x64-linux/include/imstb_rectpack.h

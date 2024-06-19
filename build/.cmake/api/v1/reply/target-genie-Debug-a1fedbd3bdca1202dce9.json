@@ -28,7 +28,7 @@
 			{
 				"command" : 1,
 				"file" : 1,
-				"line" : 22,
+				"line" : 24,
 				"parent" : 0
 			},
 			{
@@ -40,13 +40,13 @@
 			{
 				"command" : 2,
 				"file" : 1,
-				"line" : 23,
+				"line" : 25,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 1,
-				"line" : 14,
+				"line" : 16,
 				"parent" : 0
 			}
 		]
@@ -114,6 +114,26 @@
 			{
 				"backtrace" : 3,
 				"fragment" : "vcpkg_installed/x64-linux/debug/lib/libimguid.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "vcpkg_installed/x64-linux/debug/lib/libglad.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libOpenGL.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libGLX.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libGLU.so",
 				"role" : "libraries"
 			},
 			{
