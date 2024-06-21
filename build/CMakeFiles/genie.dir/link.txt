@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/genie.dir/src/main.cpp.o -o genie  libs/glfw/src/libglfw3.a /usr/lib/x86_64-linux-gnu/librt.a -lm -ldl 
+/usr/bin/c++ -g CMakeFiles/genie.dir/src/main.cpp.o CMakeFiles/genie.dir/src/genie/GenieModel.cpp.o CMakeFiles/genie.dir/src/genie/genieview.cpp.o CMakeFiles/genie.dir/src/test/t.cpp.o -o genie  vcpkg_installed/x64-linux/debug/lib/libimguid.a vcpkg_installed/x64-linux/debug/lib/libglad.a /usr/lib/x86_64-linux-gnu/libOpenGL.so /usr/lib/x86_64-linux-gnu/libGLX.so /usr/lib/x86_64-linux-gnu/libGLU.so /usr/lib/x86_64-linux-gnu/libglfw.so.3.3 

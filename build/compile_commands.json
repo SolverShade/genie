@@ -1,22 +1,22 @@
 [
 {
-  "directory": "/home/powerbox/source/repos/repos/genie/build",
-  "command": "/usr/bin/c++ -I/home/powerbox/source/repos/repos/genie/src -isystem /home/powerbox/source/repos/repos/genie/build/vcpkg_installed/x64-linux/include -g -std=gnu++17 -o CMakeFiles/genie.dir/src/main.cpp.o -c /home/powerbox/source/repos/repos/genie/src/main.cpp",
-  "file": "/home/powerbox/source/repos/repos/genie/src/main.cpp"
+  "directory": "/home/powerbox/source/repos/genie/build",
+  "command": "/usr/bin/c++ -I/home/powerbox/source/repos/genie/src -isystem /home/powerbox/source/repos/genie/build/vcpkg_installed/x64-linux/include -g -std=gnu++17 -o CMakeFiles/genie.dir/src/main.cpp.o -c /home/powerbox/source/repos/genie/src/main.cpp",
+  "file": "/home/powerbox/source/repos/genie/src/main.cpp"
 },
 {
-  "directory": "/home/powerbox/source/repos/repos/genie/build",
-  "command": "/usr/bin/c++ -I/home/powerbox/source/repos/repos/genie/src -isystem /home/powerbox/source/repos/repos/genie/build/vcpkg_installed/x64-linux/include -g -std=gnu++17 -o CMakeFiles/genie.dir/src/genie/GenieModel.cpp.o -c /home/powerbox/source/repos/repos/genie/src/genie/GenieModel.cpp",
-  "file": "/home/powerbox/source/repos/repos/genie/src/genie/GenieModel.cpp"
+  "directory": "/home/powerbox/source/repos/genie/build",
+  "command": "/usr/bin/c++ -I/home/powerbox/source/repos/genie/src -isystem /home/powerbox/source/repos/genie/build/vcpkg_installed/x64-linux/include -g -std=gnu++17 -o CMakeFiles/genie.dir/src/genie/GenieModel.cpp.o -c /home/powerbox/source/repos/genie/src/genie/GenieModel.cpp",
+  "file": "/home/powerbox/source/repos/genie/src/genie/GenieModel.cpp"
 },
 {
-  "directory": "/home/powerbox/source/repos/repos/genie/build",
-  "command": "/usr/bin/c++ -I/home/powerbox/source/repos/repos/genie/src -isystem /home/powerbox/source/repos/repos/genie/build/vcpkg_installed/x64-linux/include -g -std=gnu++17 -o CMakeFiles/genie.dir/src/genie/GenieView.cpp.o -c /home/powerbox/source/repos/repos/genie/src/genie/GenieView.cpp",
-  "file": "/home/powerbox/source/repos/repos/genie/src/genie/GenieView.cpp"
+  "directory": "/home/powerbox/source/repos/genie/build",
+  "command": "/usr/bin/c++ -I/home/powerbox/source/repos/genie/src -isystem /home/powerbox/source/repos/genie/build/vcpkg_installed/x64-linux/include -g -std=gnu++17 -o CMakeFiles/genie.dir/src/genie/genieview.cpp.o -c /home/powerbox/source/repos/genie/src/genie/genieview.cpp",
+  "file": "/home/powerbox/source/repos/genie/src/genie/genieview.cpp"
 },
 {
-  "directory": "/home/powerbox/source/repos/repos/genie/build",
-  "command": "/usr/bin/c++ -I/home/powerbox/source/repos/repos/genie/src -isystem /home/powerbox/source/repos/repos/genie/build/vcpkg_installed/x64-linux/include -g -std=gnu++17 -o CMakeFiles/genie.dir/src/test/t.cpp.o -c /home/powerbox/source/repos/repos/genie/src/test/t.cpp",
-  "file": "/home/powerbox/source/repos/repos/genie/src/test/t.cpp"
+  "directory": "/home/powerbox/source/repos/genie/build",
+  "command": "/usr/bin/c++ -I/home/powerbox/source/repos/genie/src -isystem /home/powerbox/source/repos/genie/build/vcpkg_installed/x64-linux/include -g -std=gnu++17 -o CMakeFiles/genie.dir/src/test/t.cpp.o -c /home/powerbox/source/repos/genie/src/test/t.cpp",
+  "file": "/home/powerbox/source/repos/genie/src/test/t.cpp"
 }
 ]

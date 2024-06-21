@@ -12,6 +12,41 @@ Multi-Arch: same
 Abi: c239baef1bf1acf589722e9e19f10abf130216974f8abf3a7a614e1cbab12feb
 Status: install ok installed
 
+Package: egl-registry
+Version: 2024-01-25
+Architecture: x64-linux
+Multi-Arch: same
+Abi: c7924898ba01a061f256ed98f6a8b909f4ba9d52ecd7e347fabe20a014015b23
+Description: EGL API and Extension Registry
+Status: install ok installed
+
+Package: opengl-registry
+Version: 2024-02-10
+Port-Version: 1
+Depends: egl-registry
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 4a2052c310f2a851bd186f9dce6e70e4d8d10feead89dc5d90bfd768c420696d
+Description: OpenGL, OpenGL ES, and OpenGL ES-SC API and Extension Registry
+Status: install ok installed
+
+Package: glad
+Version: 0.1.36
+Depends: egl-registry, opengl-registry, vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-linux
+Multi-Arch: same
+Abi: f8bc063ea90718b0d7ac1ee415c3ba5bc79d05a430a2e59a10cc4dbd71f8164b
+Description: Multi-Language Vulkan/GL/GLES/EGL/GLX/WGL Loader-Generator based on the official specs.
+Default-Features: loader
+Status: install ok installed
+
+Package: glad
+Feature: loader
+Architecture: x64-linux
+Multi-Arch: same
+Description: Generate loader logic.
+Status: install ok installed
+
 Package: glfw3
 Version: 3.4
 Depends: vcpkg-cmake, vcpkg-cmake-config
@@ -38,22 +73,11 @@ Multi-Arch: same
 Description: Make available GLFW binding
 Status: install ok installed
 
-Package: egl-registry
-Version: 2024-01-25
+Package: imgui
+Feature: opengl3-binding
 Architecture: x64-linux
 Multi-Arch: same
-Abi: c7924898ba01a061f256ed98f6a8b909f4ba9d52ecd7e347fabe20a014015b23
-Description: EGL API and Extension Registry
-Status: install ok installed
-
-Package: opengl-registry
-Version: 2024-02-10
-Port-Version: 1
-Depends: egl-registry
-Architecture: x64-linux
-Multi-Arch: same
-Abi: 4a2052c310f2a851bd186f9dce6e70e4d8d10feead89dc5d90bfd768c420696d
-Description: OpenGL, OpenGL ES, and OpenGL ES-SC API and Extension Registry
+Description: Make available OpenGL3/ES/ES2 (modern) binding
 Status: install ok installed
 
 Package: opengl
@@ -64,29 +88,5 @@ Architecture: x64-linux
 Multi-Arch: same
 Abi: 34517470aab69dea28233807d66ababb23d2510d934e106afbb2e40565c037c7
 Description: Open Graphics Library (OpenGL)[3][4][5] is a cross-language, cross-platform application programming interface (API) for rendering 2D and 3D vector graphics.
-Status: install ok installed
-
-Package: imgui
-Feature: opengl3-binding
-Architecture: x64-linux
-Multi-Arch: same
-Description: Make available OpenGL3/ES/ES2 (modern) binding
-Status: install ok installed
-
-Package: glad
-Version: 0.1.36
-Depends: egl-registry, opengl-registry, vcpkg-cmake, vcpkg-cmake-config
-Architecture: x64-linux
-Multi-Arch: same
-Abi: f8bc063ea90718b0d7ac1ee415c3ba5bc79d05a430a2e59a10cc4dbd71f8164b
-Description: Multi-Language Vulkan/GL/GLES/EGL/GLX/WGL Loader-Generator based on the official specs.
-Default-Features: loader
-Status: install ok installed
-
-Package: glad
-Feature: loader
-Architecture: x64-linux
-Multi-Arch: same
-Description: Generate loader logic.
 Status: install ok installed
 

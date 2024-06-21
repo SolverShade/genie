@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/powerbox/source/repos/repos/genie/libs/glfw/include
+CXX_INCLUDES = -I/home/powerbox/source/repos/genie/src -isystem /home/powerbox/source/repos/genie/build/vcpkg_installed/x64-linux/include
 
-CXX_FLAGS = -std=gnu++17
+CXX_FLAGS = -g -std=gnu++17
 

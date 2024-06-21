@@ -1,5 +1,6 @@
 {
   "dependencies": [
+    "glad",
     "glfw3",
     {
       "name": "imgui",
@@ -8,7 +9,6 @@
         "opengl3-binding"
       ]
     },
-    "opengl",
-    "glad"
+    "opengl"
   ]
 }
