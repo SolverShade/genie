@@ -23,7 +23,6 @@ void initImGui(GLFWwindow *window) {
 }
 
 void update(GLFWwindow *window) {
-  // Poll and handle events (inputs, window resize, etc.)
   glfwPollEvents();
 
   // Start a new ImGui frame
@@ -53,6 +52,8 @@ int main() {
   glfwMakeContextCurrent(window);
   gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
   initImGui(window);
+
+  GenieView genieView = GenieView(window);
 
   while (!glfwWindowShouldClose(window)) {
     update(window);

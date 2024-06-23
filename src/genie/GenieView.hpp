@@ -6,11 +6,12 @@
 
 class GenieView {
 public:
-  GenieView(int width, int height, std::string title);
-
-  GLFWwindow *Window = glfwCreateWindow(640, 480, "myTitle", NULL, NULL);
+  GenieView(GLFWwindow *window);
+  GLFWwindow *Window;
 
 private:
+  void setViewInputEvents();
+
   int width;
   int height;
   std::string title;
