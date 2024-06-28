@@ -81,12 +81,12 @@ clean: CMakeFiles/genie.dir/clean
 CMakeFiles/genie.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/powerbox/source/repos/genie/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target genie"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/powerbox/source/repos/genie/build/CMakeFiles --progress-num=1,2,3,4 "Built target genie"
 .PHONY : CMakeFiles/genie.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/genie.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/powerbox/source/repos/genie/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/powerbox/source/repos/genie/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/genie.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/powerbox/source/repos/genie/build/CMakeFiles 0
 .PHONY : CMakeFiles/genie.dir/rule

@@ -1,0 +1,86 @@
+Detecting compiler hash for triplet x64-linux...
+Compiler found: /usr/bin/x86_64-w64-mingw32-g++
+Detecting compiler hash for triplet x64-mingw-dynamic...
+Compiler found: /usr/bin/x86_64-w64-mingw32-g++
+The following packages will be rebuilt:
+    glad[core,loader]:x64-mingw-dynamic@0.1.36 -- /home/powerbox/.cache/vcpkg/registries/git-trees/fa93b14c1581057e1d14650f5f15c9b0757dd548
+    glfw3:x64-mingw-dynamic@3.4 -- /home/powerbox/.cache/vcpkg/registries/git-trees/fcbaa3b4073da7a24e20e043164075512f027d2d
+    imgui[core,glfw-binding,opengl3-binding]:x64-mingw-dynamic@1.90.7 -- /home/powerbox/.cache/vcpkg/registries/git-trees/2010bff23a4b5a3c9e4c1f174460abcc659ef681
+  * vcpkg-cmake:x64-linux@2024-04-23 -- /home/powerbox/.cache/vcpkg/registries/git-trees/e74aa1e8f93278a8e71372f1fa08c3df420eb840
+  * vcpkg-cmake-config:x64-linux@2024-05-23 -- /home/powerbox/.cache/vcpkg/registries/git-trees/97a63e4bc1a17422ffe4eff71da53b4b561a7841
+Additional packages (*) will be modified to complete this operation.
+Restored 5 package(s) from /home/powerbox/.cache/vcpkg/archives in 79.9 ms. Use --debug to see more details.
+Removing 1/10 imgui:x64-mingw-dynamic
+Elapsed time to handle imgui:x64-mingw-dynamic: 3.68 ms
+Removing 2/10 glfw3:x64-mingw-dynamic
+Elapsed time to handle glfw3:x64-mingw-dynamic: 2.16 ms
+Removing 3/10 glad:x64-mingw-dynamic
+Elapsed time to handle glad:x64-mingw-dynamic: 1.52 ms
+Removing 4/10 vcpkg-cmake:x64-linux
+Elapsed time to handle vcpkg-cmake:x64-linux: 711 us
+Removing 5/10 vcpkg-cmake-config:x64-linux
+Elapsed time to handle vcpkg-cmake-config:x64-linux: 605 us
+Installing 6/10 vcpkg-cmake-config:x64-linux@2024-05-23...
+Elapsed time to handle vcpkg-cmake-config:x64-linux: 1.37 ms
+vcpkg-cmake-config:x64-linux package ABI: e69111bd776c7825a35b68139a5610ba74f952f405c7a4a5677cf50a4157657a
+Installing 7/10 vcpkg-cmake:x64-linux@2024-04-23...
+Elapsed time to handle vcpkg-cmake:x64-linux: 874 us
+vcpkg-cmake:x64-linux package ABI: 117e353b2a07203d21263a73403ae24f88c9c7c4d18e1b8dbcf76690da4a7a3b
+Installing 8/10 glad[core,loader]:x64-mingw-dynamic@0.1.36...
+Elapsed time to handle glad:x64-mingw-dynamic: 1.66 ms
+glad:x64-mingw-dynamic package ABI: d272733211d5946010da0e6c8c69527773915ece959f2799560f1d8a4e697ca1
+Installing 9/10 glfw3:x64-mingw-dynamic@3.4...
+Elapsed time to handle glfw3:x64-mingw-dynamic: 2.39 ms
+glfw3:x64-mingw-dynamic package ABI: 6525041fa0a855078e7d97f8e5af0b1292623991de93b061e18b256f0b987339
+Installing 10/10 imgui[core,glfw-binding,opengl3-binding]:x64-mingw-dynamic@1.90.7...
+Elapsed time to handle imgui:x64-mingw-dynamic: 1.68 ms
+imgui:x64-mingw-dynamic package ABI: 06ef785b8f24bb586b28db820c2de40dd671cfb3c6fa9b2019f544d2914f7f3b
+Total install time: 16.8 ms
+glad provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(glad CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE glad::glad)
+
+glfw3 provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(glfw3 CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE glfw)
+
+glfw3 provides pkg-config modules:
+
+  # A multi-platform library for OpenGL, window and input
+  glfw3
+
+imgui provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(imgui CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE imgui::imgui)
+
+The package opengl is compatible with built-in CMake targets via CMake v3.7 and prior syntax
+
+    find_package(OpenGL REQUIRED)
+    target_link_libraries(main PRIVATE ${OPENGL_LIBRARIES})
+    target_include_directories(main PRIVATE ${OPENGL_INCLUDE_DIR})
+
+and the CMake v3.8 and beyond imported target syntax
+
+    find_package(OpenGL REQUIRED)
+    target_link_libraries(main PRIVATE OpenGL::GL)
+
+introduction of various components
+
+    find_package(OpenGL REQUIRED COMPONENTS GL      # v3.8
+                                            GLU     # v3.8
+                                            GLX     # v3.10
+                                            EGL     # v3.10
+                                            OpenGL) # v3.10
+
+The OpenGL SDK is highly platform dependent and is usually an OS component. It's not realistic to build from source for every platform.
+
+    WINDOWS: is part of the Windows SDK which this package installs.
+    LINUX: the SDK may be installed from your distro's repo or from 3rd parties manually. There are too many to count.
+    APPLE: consult your distribution vendor on the state of OpenGL support: https://support.apple.com/en-us/HT202823
+

@@ -1,0 +1,3 @@
+/home/powerbox/source/repos/genie/build-mingw/CMakeFiles/genie.dir
+/home/powerbox/source/repos/genie/build-mingw/CMakeFiles/edit_cache.dir
+/home/powerbox/source/repos/genie/build-mingw/CMakeFiles/rebuild_cache.dir

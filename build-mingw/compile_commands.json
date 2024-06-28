@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/powerbox/source/repos/genie/build-mingw",
+  "command": "/usr/bin/x86_64-w64-mingw32-g++ -DGLFW_DLL @CMakeFiles/genie.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles/genie.dir/src/main.cpp.obj -c /home/powerbox/source/repos/genie/src/main.cpp",
+  "file": "/home/powerbox/source/repos/genie/src/main.cpp"
+},
+{
+  "directory": "/home/powerbox/source/repos/genie/build-mingw",
+  "command": "/usr/bin/x86_64-w64-mingw32-g++ -DGLFW_DLL @CMakeFiles/genie.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles/genie.dir/src/genie/GenieModel.cpp.obj -c /home/powerbox/source/repos/genie/src/genie/GenieModel.cpp",
+  "file": "/home/powerbox/source/repos/genie/src/genie/GenieModel.cpp"
+},
+{
+  "directory": "/home/powerbox/source/repos/genie/build-mingw",
+  "command": "/usr/bin/x86_64-w64-mingw32-g++ -DGLFW_DLL @CMakeFiles/genie.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles/genie.dir/src/genie/genieview.cpp.obj -c /home/powerbox/source/repos/genie/src/genie/genieview.cpp",
+  "file": "/home/powerbox/source/repos/genie/src/genie/genieview.cpp"
+}
+]

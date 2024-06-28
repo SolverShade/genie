@@ -201,30 +201,6 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/test/t.o: src/test/t.cpp.o
-.PHONY : src/test/t.o
-
-# target to build an object file
-src/test/t.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/src/test/t.cpp.o
-.PHONY : src/test/t.cpp.o
-
-src/test/t.i: src/test/t.cpp.i
-.PHONY : src/test/t.i
-
-# target to preprocess a source file
-src/test/t.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/src/test/t.cpp.i
-.PHONY : src/test/t.cpp.i
-
-src/test/t.s: src/test/t.cpp.s
-.PHONY : src/test/t.s
-
-# target to generate assembly for a file
-src/test/t.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/src/test/t.cpp.s
-.PHONY : src/test/t.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -243,9 +219,6 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/test/t.o"
-	@echo "... src/test/t.i"
-	@echo "... src/test/t.s"
 .PHONY : help
 
 

@@ -11,6 +11,7 @@ public:
 
 private:
   void setViewInputEvents();
+  void setWindowAppearance();
 
   int width;
   int height;
