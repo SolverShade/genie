@@ -129,6 +129,110 @@ genie/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/build
 .PHONY : genie/fast
 
+#=============================================================================
+# Target rules for targets named nanogui
+
+# Build rule for target.
+nanogui: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nanogui
+.PHONY : nanogui
+
+# fast build rule for target.
+nanogui/fast:
+	$(MAKE) $(MAKESILENT) -f libs/nanogui/CMakeFiles/nanogui.dir/build.make libs/nanogui/CMakeFiles/nanogui.dir/build
+.PHONY : nanogui/fast
+
+#=============================================================================
+# Target rules for targets named example1
+
+# Build rule for target.
+example1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example1
+.PHONY : example1
+
+# fast build rule for target.
+example1/fast:
+	$(MAKE) $(MAKESILENT) -f libs/nanogui/CMakeFiles/example1.dir/build.make libs/nanogui/CMakeFiles/example1.dir/build
+.PHONY : example1/fast
+
+#=============================================================================
+# Target rules for targets named example2
+
+# Build rule for target.
+example2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example2
+.PHONY : example2
+
+# fast build rule for target.
+example2/fast:
+	$(MAKE) $(MAKESILENT) -f libs/nanogui/CMakeFiles/example2.dir/build.make libs/nanogui/CMakeFiles/example2.dir/build
+.PHONY : example2/fast
+
+#=============================================================================
+# Target rules for targets named example3
+
+# Build rule for target.
+example3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example3
+.PHONY : example3
+
+# fast build rule for target.
+example3/fast:
+	$(MAKE) $(MAKESILENT) -f libs/nanogui/CMakeFiles/example3.dir/build.make libs/nanogui/CMakeFiles/example3.dir/build
+.PHONY : example3/fast
+
+#=============================================================================
+# Target rules for targets named example4
+
+# Build rule for target.
+example4: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example4
+.PHONY : example4
+
+# fast build rule for target.
+example4/fast:
+	$(MAKE) $(MAKESILENT) -f libs/nanogui/CMakeFiles/example4.dir/build.make libs/nanogui/CMakeFiles/example4.dir/build
+.PHONY : example4/fast
+
+#=============================================================================
+# Target rules for targets named example_icons
+
+# Build rule for target.
+example_icons: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example_icons
+.PHONY : example_icons
+
+# fast build rule for target.
+example_icons/fast:
+	$(MAKE) $(MAKESILENT) -f libs/nanogui/CMakeFiles/example_icons.dir/build.make libs/nanogui/CMakeFiles/example_icons.dir/build
+.PHONY : example_icons/fast
+
+#=============================================================================
+# Target rules for targets named glfw_objects
+
+# Build rule for target.
+glfw_objects: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw_objects
+.PHONY : glfw_objects
+
+# fast build rule for target.
+glfw_objects/fast:
+	$(MAKE) $(MAKESILENT) -f libs/nanogui/ext/glfw/src/CMakeFiles/glfw_objects.dir/build.make libs/nanogui/ext/glfw/src/CMakeFiles/glfw_objects.dir/build
+.PHONY : glfw_objects/fast
+
+#=============================================================================
+# Target rules for targets named glfw
+
+# Build rule for target.
+glfw: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw
+.PHONY : glfw
+
+# fast build rule for target.
+glfw/fast:
+	$(MAKE) $(MAKESILENT) -f libs/nanogui/ext/glfw/src/CMakeFiles/glfw.dir/build.make libs/nanogui/ext/glfw/src/CMakeFiles/glfw.dir/build
+.PHONY : glfw/fast
+
 src/genie/GenieModel.o: src/genie/GenieModel.cpp.o
 .PHONY : src/genie/GenieModel.o
 
@@ -209,7 +313,15 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... example1"
+	@echo "... example2"
+	@echo "... example3"
+	@echo "... example4"
+	@echo "... example_icons"
 	@echo "... genie"
+	@echo "... glfw"
+	@echo "... glfw_objects"
+	@echo "... nanogui"
 	@echo "... src/genie/GenieModel.o"
 	@echo "... src/genie/GenieModel.i"
 	@echo "... src/genie/GenieModel.s"

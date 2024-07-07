@@ -1,0 +1,3 @@
+/home/powerbox/source/repos/genie/build/_deps/nanogui-subbuild/CMakeFiles/nanogui-populate.dir
+/home/powerbox/source/repos/genie/build/_deps/nanogui-subbuild/CMakeFiles/edit_cache.dir
+/home/powerbox/source/repos/genie/build/_deps/nanogui-subbuild/CMakeFiles/rebuild_cache.dir

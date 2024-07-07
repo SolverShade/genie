@@ -2,21 +2,21 @@ Package: vcpkg-cmake-config
 Version: 2024-05-23
 Architecture: x64-linux
 Multi-Arch: same
-Abi: 9066256dc3f4f6c19f41b1e92a50cda5cf33b4dad5b963f1a961fe816f28005e
+Abi: f92ca276426fe66382a356bd19a76938a142da6d0825fb1d9e3395bbfd9ba381
 Status: install ok installed
 
 Package: vcpkg-cmake
 Version: 2024-04-23
 Architecture: x64-linux
 Multi-Arch: same
-Abi: c239baef1bf1acf589722e9e19f10abf130216974f8abf3a7a614e1cbab12feb
+Abi: 10a38c7e57cd002658f419df36e6e1ee571b777eaa8167d3e6f15f3d0ec4ee51
 Status: install ok installed
 
 Package: egl-registry
 Version: 2024-01-25
 Architecture: x64-linux
 Multi-Arch: same
-Abi: c7924898ba01a061f256ed98f6a8b909f4ba9d52ecd7e347fabe20a014015b23
+Abi: d6468ff7a775b01022735f173e29b8b44754bbd6f78d9dd3dd463252a4968ec9
 Description: EGL API and Extension Registry
 Status: install ok installed
 
@@ -26,7 +26,7 @@ Port-Version: 1
 Depends: egl-registry
 Architecture: x64-linux
 Multi-Arch: same
-Abi: 4a2052c310f2a851bd186f9dce6e70e4d8d10feead89dc5d90bfd768c420696d
+Abi: a64f17e446a5d5da5066d1fd98cc1179caa61300a298c25bfedb79985a11b253
 Description: OpenGL, OpenGL ES, and OpenGL ES-SC API and Extension Registry
 Status: install ok installed
 
@@ -35,7 +35,7 @@ Version: 0.1.36
 Depends: egl-registry, opengl-registry, vcpkg-cmake, vcpkg-cmake-config
 Architecture: x64-linux
 Multi-Arch: same
-Abi: f8bc063ea90718b0d7ac1ee415c3ba5bc79d05a430a2e59a10cc4dbd71f8164b
+Abi: 16689a8c81a48fd1425c91efabc14b4159796dba9f5b06413912baa06032a8dc
 Description: Multi-Language Vulkan/GL/GLES/EGL/GLX/WGL Loader-Generator based on the official specs.
 Default-Features: loader
 Status: install ok installed
@@ -52,7 +52,7 @@ Version: 3.4
 Depends: vcpkg-cmake, vcpkg-cmake-config
 Architecture: x64-linux
 Multi-Arch: same
-Abi: 22a27fe63783b44f9097e43b3dc91ffbb1e9071cf76605e4b535e31c842811b8
+Abi: 68cc7acc913054513e3fc96f3ab89c383d52de5577d7ec94747a07735903e78f
 Description: GLFW is a free, Open Source, multi-platform library for OpenGL, OpenGL ES and Vulkan application development. It provides a simple, platform-independent API for creating windows, contexts and surfaces, reading input, handling events, etc.
 Status: install ok installed
 
@@ -61,7 +61,7 @@ Version: 1.90.7
 Depends: vcpkg-cmake, vcpkg-cmake-config
 Architecture: x64-linux
 Multi-Arch: same
-Abi: 58fc216885d6205e1317040aa7400e5cb697e60cd7e3a48330edb16540ed889f
+Abi: 35cb189849b4b573b5c5e4677b22c09aeb464380622bdd42287af03e35909966
 Description: Bloat-free Immediate Mode Graphical User interface for C++ with minimal dependencies.
 Status: install ok installed
 
@@ -86,7 +86,7 @@ Port-Version: 3
 Depends: opengl-registry
 Architecture: x64-linux
 Multi-Arch: same
-Abi: 34517470aab69dea28233807d66ababb23d2510d934e106afbb2e40565c037c7
+Abi: 128d6ee392d82427d091b3f8e6332da08f6a5803b20071689eb0c70acef40e3e
 Description: Open Graphics Library (OpenGL)[3][4][5] is a cross-language, cross-platform application programming interface (API) for rendering 2D and 3D vector graphics.
 Status: install ok installed
 
@@ -167,4 +167,50 @@ Multi-Arch: same
 Abi: e7a7d88410714d838da6444bc09175fedef196dc4fe46ae31d78d0f11413cd7f
 Description: Open Graphics Library (OpenGL)[3][4][5] is a cross-language, cross-platform application programming interface (API) for rendering 2D and 3D vector graphics.
 Status: purge ok not-installed
+
+Package: stb
+Version: 2023-04-11
+Port-Version: 1
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 7b96f79de12e37fcc9be5a1df96a6868666b47730bf330c9a682b39b6c9daf62
+Description: public domain header-only libraries
+Status: install ok installed
+
+Package: nanovg
+Version: 2019-08-30
+Port-Version: 6
+Depends: stb, vcpkg-cmake
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 6100f6d335172ad6da51a9843e60a1b4ec2903fbe545398d8d3f6b31931ab51e
+Description: NanoVG is small antialiased vector graphics rendering library for OpenGL.
+Status: install ok installed
+
+Package: eigen3
+Version: 3.4.0
+Port-Version: 4
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-linux
+Multi-Arch: same
+Abi: be9b0afd1607a639596735d0d3d22d7ce7676c5f192338de29e9eb1cb5581a54
+Description: C++ template library for linear algebra: matrices, vectors, numerical solvers, and related algorithms.
+Status: install ok installed
+
+Package: nanogui
+Version: 2019-09-23
+Port-Version: 5
+Depends: eigen3, glad, glfw3, nanovg, vcpkg-cmake
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 9036b473a4859298a00bd90a9035889c86939b0b4ddb9b78b928cb8c25eae9c5
+Description: NanoGUI is a minimalistic cross-platform widget library for OpenGL 3.x or higher.
+Status: install ok installed
+
+Package: nanogui
+Feature: example
+Architecture: x64-linux
+Multi-Arch: same
+Description: Build NanoGUI example application
+Status: install ok installed
 

@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/powerbox/source/repos/genie/build/_deps/nanogui-subbuild/CMakeFiles/nanogui-populate"
+		},
+		{
+			"file" : "/home/powerbox/source/repos/genie/build/_deps/nanogui-subbuild/CMakeFiles/nanogui-populate.rule"
+		},
+		{
+			"file" : "/home/powerbox/source/repos/genie/build/_deps/nanogui-subbuild/CMakeFiles/nanogui-populate-complete.rule"
+		},
+		{
+			"file" : "/home/powerbox/source/repos/genie/build/_deps/nanogui-subbuild/nanogui-populate-prefix/src/nanogui-populate-stamp/nanogui-populate-build.rule"
+		},
+		{
+			"file" : "/home/powerbox/source/repos/genie/build/_deps/nanogui-subbuild/nanogui-populate-prefix/src/nanogui-populate-stamp/nanogui-populate-configure.rule"
+		},
+		{
+			"file" : "/home/powerbox/source/repos/genie/build/_deps/nanogui-subbuild/nanogui-populate-prefix/src/nanogui-populate-stamp/nanogui-populate-download.rule"
+		},
+		{
+			"file" : "/home/powerbox/source/repos/genie/build/_deps/nanogui-subbuild/nanogui-populate-prefix/src/nanogui-populate-stamp/nanogui-populate-install.rule"
+		},
+		{
+			"file" : "/home/powerbox/source/repos/genie/build/_deps/nanogui-subbuild/nanogui-populate-prefix/src/nanogui-populate-stamp/nanogui-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/powerbox/source/repos/genie/build/_deps/nanogui-subbuild/nanogui-populate-prefix/src/nanogui-populate-stamp/nanogui-populate-patch.rule"
+		},
+		{
+			"file" : "/home/powerbox/source/repos/genie/build/_deps/nanogui-subbuild/nanogui-populate-prefix/src/nanogui-populate-stamp/nanogui-populate-test.rule"
+		},
+		{
+			"file" : "/home/powerbox/source/repos/genie/build/_deps/nanogui-subbuild/nanogui-populate-prefix/src/nanogui-populate-stamp/nanogui-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"nanogui-populate"
+		],
+		"name" : "nanogui-populate"
+	}
+}

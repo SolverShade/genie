@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -g CMakeFiles/example1.dir/src/example1.cpp.o -o example1  -Wl,-rpath,/home/powerbox/source/repos/genie/build/libs/nanogui libnanogui.so 

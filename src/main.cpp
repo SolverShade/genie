@@ -1,92 +1,42 @@
 // clang-format off
-#include <glad/glad.h>
-#include <GLFW/glfw3.h>
-#include <genie/GenieView.hpp>
-#include <imgui_impl_glfw.h>
-#include <imgui_impl_opengl3.h>
+#include "nanogui/vector.h"
 #include <iostream>
-#include <ostream>
+#include <nanogui/nanogui.h>
 // clang-format on
 
-void framebuffer_size_callback(GLFWwindow *window, int width, int height) {
-  glViewport(0, 0, width, height);
-}
-
-/**
- * Sets up glfw related settings that must be run
- * before a window is created such as window transparency
- * and other such things
- */
-void preWindowCreationSetup() {
-  glfwWindowHint(GLFW_TRANSPARENT_FRAMEBUFFER, 1);
-}
-
-void initImGui(GLFWwindow *window) {
-  IMGUI_CHECKVERSION();
-  ImGui::CreateContext();
-  ImGuiIO &io = ImGui::GetIO();
-  (void)io;
-
-  ImGui::StyleColorsDark();
-
-  ImGui_ImplGlfw_InitForOpenGL(window, true);
-  ImGui_ImplOpenGL3_Init("#version 330");
-}
-
-void update(GLFWwindow *window) {
-  glfwPollEvents();
-
-  // Start a new ImGui frame
-  ImGui_ImplOpenGL3_NewFrame();
-  ImGui_ImplGlfw_NewFrame();
-  ImGui::NewFrame();
-
-  // ImGui content goes here
-  ImGui::Begin("Hellos, ImGui!");
-  ImGui::Text("This is a simple example of ImGui with GLFW and GLAD.");
-  ImGui::End();
-
-  // Render ImGui content
-  ImGui::Render();
-  glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
-  glClear(GL_COLOR_BUFFER_BIT);
-  ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
-
-  // Swap buffers
-  glfwSwapBuffers(window);
-}
+using namespace nanogui;
 
 int main() {
-  if (!glfwInit()) {
-    return -1;
-  }
+  std::cout << "hello world" << std::endl;
 
-  preWindowCreationSetup();
+  // Initialize NanoGUI
+  nanogui::init();
 
-  GLFWwindow *window = glfwCreateWindow(800, 600, "ImGui + GLFW + GLAD Example",
-                                        nullptr, nullptr);
+  // Create a NanoGUI screen
+  Screen screen(Vector2i(300, 200), "NanoGUI Example");
 
-  if (window == nullptr) {
-    std::cout << "failed to create window" << std::endl;
-    return -1;
-  }
+  // Create a window
+  Window *window = new Window(&screen, "Button Demo");
 
-  glfwMakeContextCurrent(window);
-  gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
-  initImGui(window);
+  window->set_position(Vector2i(15, 15));
+  window->set_layout(new GroupLayout());
 
-  GenieView genieView = GenieView(window);
+  // Create a button
+  Button *button = new Button(window, "Click me!");
+  button->set_callback([]() { std::cout << "Button clicked!" << std::endl; });
 
-  while (!glfwWindowShouldClose(window)) {
-    update(window);
-  }
+  // Add the button to the window
+  window->set_layout(new GroupLayout());
+  screen.add_child(window);
 
-  // Cleanup on exit
-  ImGui_ImplOpenGL3_Shutdown();
-  ImGui_ImplGlfw_Shutdown();
-  ImGui::DestroyContext();
-  glfwDestroyWindow(window);
-  glfwTerminate();
+  screen.perform_layout();
+
+  // Main NanoGUI loop
+  screen.set_visible(true);
+  nanogui::mainloop();
+
+  // Shutdown NanoGUI
+  // nanogui::shutdown();
 
   return 0;
 }

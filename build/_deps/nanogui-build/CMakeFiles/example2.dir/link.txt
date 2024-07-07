@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -std=c++14 -g -rdynamic CMakeFiles/example2.dir/src/example2.cpp.o -o example2  -Wl,-rpath,/home/powerbox/source/repos/genie/build/_deps/nanogui-build libnanogui.so -lGL -lXxf86vm -lXrandr -lXinerama -lXcursor -lXi -lX11 -lpthread -lrt -ldl 

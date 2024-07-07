@@ -64,29 +64,89 @@ CMAKE_BINARY_DIR = /home/powerbox/source/repos/genie/build
 
 # The main recursive "all" target.
 all: CMakeFiles/genie.dir/all
+all: libs/nanogui/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: libs/nanogui/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/genie.dir/clean
+clean: libs/nanogui/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory libs/nanogui
+
+# Recursive "all" directory target.
+libs/nanogui/all: libs/nanogui/CMakeFiles/nanogui.dir/all
+libs/nanogui/all: libs/nanogui/CMakeFiles/example1.dir/all
+libs/nanogui/all: libs/nanogui/CMakeFiles/example2.dir/all
+libs/nanogui/all: libs/nanogui/CMakeFiles/example3.dir/all
+libs/nanogui/all: libs/nanogui/CMakeFiles/example4.dir/all
+libs/nanogui/all: libs/nanogui/CMakeFiles/example_icons.dir/all
+libs/nanogui/all: libs/nanogui/ext/glfw/all
+.PHONY : libs/nanogui/all
+
+# Recursive "preinstall" directory target.
+libs/nanogui/preinstall: libs/nanogui/ext/glfw/preinstall
+.PHONY : libs/nanogui/preinstall
+
+# Recursive "clean" directory target.
+libs/nanogui/clean: libs/nanogui/CMakeFiles/nanogui.dir/clean
+libs/nanogui/clean: libs/nanogui/CMakeFiles/example1.dir/clean
+libs/nanogui/clean: libs/nanogui/CMakeFiles/example2.dir/clean
+libs/nanogui/clean: libs/nanogui/CMakeFiles/example3.dir/clean
+libs/nanogui/clean: libs/nanogui/CMakeFiles/example4.dir/clean
+libs/nanogui/clean: libs/nanogui/CMakeFiles/example_icons.dir/clean
+libs/nanogui/clean: libs/nanogui/ext/glfw/clean
+.PHONY : libs/nanogui/clean
+
+#=============================================================================
+# Directory level rules for directory libs/nanogui/ext/glfw
+
+# Recursive "all" directory target.
+libs/nanogui/ext/glfw/all: libs/nanogui/ext/glfw/src/all
+.PHONY : libs/nanogui/ext/glfw/all
+
+# Recursive "preinstall" directory target.
+libs/nanogui/ext/glfw/preinstall: libs/nanogui/ext/glfw/src/preinstall
+.PHONY : libs/nanogui/ext/glfw/preinstall
+
+# Recursive "clean" directory target.
+libs/nanogui/ext/glfw/clean: libs/nanogui/ext/glfw/src/clean
+.PHONY : libs/nanogui/ext/glfw/clean
+
+#=============================================================================
+# Directory level rules for directory libs/nanogui/ext/glfw/src
+
+# Recursive "all" directory target.
+libs/nanogui/ext/glfw/src/all: libs/nanogui/ext/glfw/src/CMakeFiles/glfw_objects.dir/all
+.PHONY : libs/nanogui/ext/glfw/src/all
+
+# Recursive "preinstall" directory target.
+libs/nanogui/ext/glfw/src/preinstall:
+.PHONY : libs/nanogui/ext/glfw/src/preinstall
+
+# Recursive "clean" directory target.
+libs/nanogui/ext/glfw/src/clean: libs/nanogui/ext/glfw/src/CMakeFiles/glfw_objects.dir/clean
+libs/nanogui/ext/glfw/src/clean: libs/nanogui/ext/glfw/src/CMakeFiles/glfw.dir/clean
+.PHONY : libs/nanogui/ext/glfw/src/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/genie.dir
 
 # All Build rule for target.
-CMakeFiles/genie.dir/all:
+CMakeFiles/genie.dir/all: libs/nanogui/CMakeFiles/nanogui.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/powerbox/source/repos/genie/build/CMakeFiles --progress-num=1,2,3,4 "Built target genie"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/powerbox/source/repos/genie/build/CMakeFiles --progress-num=11,12,13,14 "Built target genie"
 .PHONY : CMakeFiles/genie.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/genie.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/powerbox/source/repos/genie/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/powerbox/source/repos/genie/build/CMakeFiles 56
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/genie.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/powerbox/source/repos/genie/build/CMakeFiles 0
 .PHONY : CMakeFiles/genie.dir/rule
@@ -99,6 +159,214 @@ genie: CMakeFiles/genie.dir/rule
 CMakeFiles/genie.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/clean
 .PHONY : CMakeFiles/genie.dir/clean
+
+#=============================================================================
+# Target rules for target libs/nanogui/CMakeFiles/nanogui.dir
+
+# All Build rule for target.
+libs/nanogui/CMakeFiles/nanogui.dir/all: libs/nanogui/ext/glfw/src/CMakeFiles/glfw_objects.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/nanogui/CMakeFiles/nanogui.dir/build.make libs/nanogui/CMakeFiles/nanogui.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/nanogui/CMakeFiles/nanogui.dir/build.make libs/nanogui/CMakeFiles/nanogui.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/powerbox/source/repos/genie/build/CMakeFiles --progress-num=32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67 "Built target nanogui"
+.PHONY : libs/nanogui/CMakeFiles/nanogui.dir/all
+
+# Build rule for subdir invocation for target.
+libs/nanogui/CMakeFiles/nanogui.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/powerbox/source/repos/genie/build/CMakeFiles 52
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/nanogui/CMakeFiles/nanogui.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/powerbox/source/repos/genie/build/CMakeFiles 0
+.PHONY : libs/nanogui/CMakeFiles/nanogui.dir/rule
+
+# Convenience name for target.
+nanogui: libs/nanogui/CMakeFiles/nanogui.dir/rule
+.PHONY : nanogui
+
+# clean rule for target.
+libs/nanogui/CMakeFiles/nanogui.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/nanogui/CMakeFiles/nanogui.dir/build.make libs/nanogui/CMakeFiles/nanogui.dir/clean
+.PHONY : libs/nanogui/CMakeFiles/nanogui.dir/clean
+
+#=============================================================================
+# Target rules for target libs/nanogui/CMakeFiles/example1.dir
+
+# All Build rule for target.
+libs/nanogui/CMakeFiles/example1.dir/all: libs/nanogui/CMakeFiles/nanogui.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/nanogui/CMakeFiles/example1.dir/build.make libs/nanogui/CMakeFiles/example1.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/nanogui/CMakeFiles/example1.dir/build.make libs/nanogui/CMakeFiles/example1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/powerbox/source/repos/genie/build/CMakeFiles --progress-num=1,2 "Built target example1"
+.PHONY : libs/nanogui/CMakeFiles/example1.dir/all
+
+# Build rule for subdir invocation for target.
+libs/nanogui/CMakeFiles/example1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/powerbox/source/repos/genie/build/CMakeFiles 54
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/nanogui/CMakeFiles/example1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/powerbox/source/repos/genie/build/CMakeFiles 0
+.PHONY : libs/nanogui/CMakeFiles/example1.dir/rule
+
+# Convenience name for target.
+example1: libs/nanogui/CMakeFiles/example1.dir/rule
+.PHONY : example1
+
+# clean rule for target.
+libs/nanogui/CMakeFiles/example1.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/nanogui/CMakeFiles/example1.dir/build.make libs/nanogui/CMakeFiles/example1.dir/clean
+.PHONY : libs/nanogui/CMakeFiles/example1.dir/clean
+
+#=============================================================================
+# Target rules for target libs/nanogui/CMakeFiles/example2.dir
+
+# All Build rule for target.
+libs/nanogui/CMakeFiles/example2.dir/all: libs/nanogui/CMakeFiles/nanogui.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/nanogui/CMakeFiles/example2.dir/build.make libs/nanogui/CMakeFiles/example2.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/nanogui/CMakeFiles/example2.dir/build.make libs/nanogui/CMakeFiles/example2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/powerbox/source/repos/genie/build/CMakeFiles --progress-num=3,4 "Built target example2"
+.PHONY : libs/nanogui/CMakeFiles/example2.dir/all
+
+# Build rule for subdir invocation for target.
+libs/nanogui/CMakeFiles/example2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/powerbox/source/repos/genie/build/CMakeFiles 54
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/nanogui/CMakeFiles/example2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/powerbox/source/repos/genie/build/CMakeFiles 0
+.PHONY : libs/nanogui/CMakeFiles/example2.dir/rule
+
+# Convenience name for target.
+example2: libs/nanogui/CMakeFiles/example2.dir/rule
+.PHONY : example2
+
+# clean rule for target.
+libs/nanogui/CMakeFiles/example2.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/nanogui/CMakeFiles/example2.dir/build.make libs/nanogui/CMakeFiles/example2.dir/clean
+.PHONY : libs/nanogui/CMakeFiles/example2.dir/clean
+
+#=============================================================================
+# Target rules for target libs/nanogui/CMakeFiles/example3.dir
+
+# All Build rule for target.
+libs/nanogui/CMakeFiles/example3.dir/all: libs/nanogui/CMakeFiles/nanogui.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/nanogui/CMakeFiles/example3.dir/build.make libs/nanogui/CMakeFiles/example3.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/nanogui/CMakeFiles/example3.dir/build.make libs/nanogui/CMakeFiles/example3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/powerbox/source/repos/genie/build/CMakeFiles --progress-num=5,6 "Built target example3"
+.PHONY : libs/nanogui/CMakeFiles/example3.dir/all
+
+# Build rule for subdir invocation for target.
+libs/nanogui/CMakeFiles/example3.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/powerbox/source/repos/genie/build/CMakeFiles 54
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/nanogui/CMakeFiles/example3.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/powerbox/source/repos/genie/build/CMakeFiles 0
+.PHONY : libs/nanogui/CMakeFiles/example3.dir/rule
+
+# Convenience name for target.
+example3: libs/nanogui/CMakeFiles/example3.dir/rule
+.PHONY : example3
+
+# clean rule for target.
+libs/nanogui/CMakeFiles/example3.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/nanogui/CMakeFiles/example3.dir/build.make libs/nanogui/CMakeFiles/example3.dir/clean
+.PHONY : libs/nanogui/CMakeFiles/example3.dir/clean
+
+#=============================================================================
+# Target rules for target libs/nanogui/CMakeFiles/example4.dir
+
+# All Build rule for target.
+libs/nanogui/CMakeFiles/example4.dir/all: libs/nanogui/CMakeFiles/nanogui.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/nanogui/CMakeFiles/example4.dir/build.make libs/nanogui/CMakeFiles/example4.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/nanogui/CMakeFiles/example4.dir/build.make libs/nanogui/CMakeFiles/example4.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/powerbox/source/repos/genie/build/CMakeFiles --progress-num=7,8 "Built target example4"
+.PHONY : libs/nanogui/CMakeFiles/example4.dir/all
+
+# Build rule for subdir invocation for target.
+libs/nanogui/CMakeFiles/example4.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/powerbox/source/repos/genie/build/CMakeFiles 54
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/nanogui/CMakeFiles/example4.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/powerbox/source/repos/genie/build/CMakeFiles 0
+.PHONY : libs/nanogui/CMakeFiles/example4.dir/rule
+
+# Convenience name for target.
+example4: libs/nanogui/CMakeFiles/example4.dir/rule
+.PHONY : example4
+
+# clean rule for target.
+libs/nanogui/CMakeFiles/example4.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/nanogui/CMakeFiles/example4.dir/build.make libs/nanogui/CMakeFiles/example4.dir/clean
+.PHONY : libs/nanogui/CMakeFiles/example4.dir/clean
+
+#=============================================================================
+# Target rules for target libs/nanogui/CMakeFiles/example_icons.dir
+
+# All Build rule for target.
+libs/nanogui/CMakeFiles/example_icons.dir/all: libs/nanogui/CMakeFiles/nanogui.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/nanogui/CMakeFiles/example_icons.dir/build.make libs/nanogui/CMakeFiles/example_icons.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/nanogui/CMakeFiles/example_icons.dir/build.make libs/nanogui/CMakeFiles/example_icons.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/powerbox/source/repos/genie/build/CMakeFiles --progress-num=9,10 "Built target example_icons"
+.PHONY : libs/nanogui/CMakeFiles/example_icons.dir/all
+
+# Build rule for subdir invocation for target.
+libs/nanogui/CMakeFiles/example_icons.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/powerbox/source/repos/genie/build/CMakeFiles 54
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/nanogui/CMakeFiles/example_icons.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/powerbox/source/repos/genie/build/CMakeFiles 0
+.PHONY : libs/nanogui/CMakeFiles/example_icons.dir/rule
+
+# Convenience name for target.
+example_icons: libs/nanogui/CMakeFiles/example_icons.dir/rule
+.PHONY : example_icons
+
+# clean rule for target.
+libs/nanogui/CMakeFiles/example_icons.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/nanogui/CMakeFiles/example_icons.dir/build.make libs/nanogui/CMakeFiles/example_icons.dir/clean
+.PHONY : libs/nanogui/CMakeFiles/example_icons.dir/clean
+
+#=============================================================================
+# Target rules for target libs/nanogui/ext/glfw/src/CMakeFiles/glfw_objects.dir
+
+# All Build rule for target.
+libs/nanogui/ext/glfw/src/CMakeFiles/glfw_objects.dir/all:
+	$(MAKE) $(MAKESILENT) -f libs/nanogui/ext/glfw/src/CMakeFiles/glfw_objects.dir/build.make libs/nanogui/ext/glfw/src/CMakeFiles/glfw_objects.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/nanogui/ext/glfw/src/CMakeFiles/glfw_objects.dir/build.make libs/nanogui/ext/glfw/src/CMakeFiles/glfw_objects.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/powerbox/source/repos/genie/build/CMakeFiles --progress-num=16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31 "Built target glfw_objects"
+.PHONY : libs/nanogui/ext/glfw/src/CMakeFiles/glfw_objects.dir/all
+
+# Build rule for subdir invocation for target.
+libs/nanogui/ext/glfw/src/CMakeFiles/glfw_objects.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/powerbox/source/repos/genie/build/CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/nanogui/ext/glfw/src/CMakeFiles/glfw_objects.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/powerbox/source/repos/genie/build/CMakeFiles 0
+.PHONY : libs/nanogui/ext/glfw/src/CMakeFiles/glfw_objects.dir/rule
+
+# Convenience name for target.
+glfw_objects: libs/nanogui/ext/glfw/src/CMakeFiles/glfw_objects.dir/rule
+.PHONY : glfw_objects
+
+# clean rule for target.
+libs/nanogui/ext/glfw/src/CMakeFiles/glfw_objects.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/nanogui/ext/glfw/src/CMakeFiles/glfw_objects.dir/build.make libs/nanogui/ext/glfw/src/CMakeFiles/glfw_objects.dir/clean
+.PHONY : libs/nanogui/ext/glfw/src/CMakeFiles/glfw_objects.dir/clean
+
+#=============================================================================
+# Target rules for target libs/nanogui/ext/glfw/src/CMakeFiles/glfw.dir
+
+# All Build rule for target.
+libs/nanogui/ext/glfw/src/CMakeFiles/glfw.dir/all: libs/nanogui/ext/glfw/src/CMakeFiles/glfw_objects.dir/all
+	$(MAKE) $(MAKESILENT) -f libs/nanogui/ext/glfw/src/CMakeFiles/glfw.dir/build.make libs/nanogui/ext/glfw/src/CMakeFiles/glfw.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/nanogui/ext/glfw/src/CMakeFiles/glfw.dir/build.make libs/nanogui/ext/glfw/src/CMakeFiles/glfw.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/powerbox/source/repos/genie/build/CMakeFiles --progress-num=15 "Built target glfw"
+.PHONY : libs/nanogui/ext/glfw/src/CMakeFiles/glfw.dir/all
+
+# Build rule for subdir invocation for target.
+libs/nanogui/ext/glfw/src/CMakeFiles/glfw.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/powerbox/source/repos/genie/build/CMakeFiles 17
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/nanogui/ext/glfw/src/CMakeFiles/glfw.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/powerbox/source/repos/genie/build/CMakeFiles 0
+.PHONY : libs/nanogui/ext/glfw/src/CMakeFiles/glfw.dir/rule
+
+# Convenience name for target.
+glfw: libs/nanogui/ext/glfw/src/CMakeFiles/glfw.dir/rule
+.PHONY : glfw
+
+# clean rule for target.
+libs/nanogui/ext/glfw/src/CMakeFiles/glfw.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/nanogui/ext/glfw/src/CMakeFiles/glfw.dir/build.make libs/nanogui/ext/glfw/src/CMakeFiles/glfw.dir/clean
+.PHONY : libs/nanogui/ext/glfw/src/CMakeFiles/glfw.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

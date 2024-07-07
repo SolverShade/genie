@@ -3,13 +3,13 @@
   "spdxVersion": "SPDX-2.2",
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
-  "documentNamespace": "https://spdx.org/spdxdocs/glfw3-x64-linux-3.4-c5a4e5a8-f1e8-4bda-b59c-1b706149658c",
-  "name": "glfw3:x64-linux@3.4 22a27fe63783b44f9097e43b3dc91ffbb1e9071cf76605e4b535e31c842811b8",
+  "documentNamespace": "https://spdx.org/spdxdocs/glfw3-x64-linux-3.4-003cdb95-3981-4088-8e63-0f8bfda70df6",
+  "name": "glfw3:x64-linux@3.4 68cc7acc913054513e3fc96f3ab89c383d52de5577d7ec94747a07735903e78f",
   "creationInfo": {
     "creators": [
       "Tool: vcpkg-2024-06-10-02590c430e4ed9215d27870138c2e579cc338772"
     ],
-    "created": "2024-06-18T01:22:16Z"
+    "created": "2024-07-07T14:57:50Z"
   },
   "relationships": [
     {
@@ -59,7 +59,7 @@
     {
       "name": "glfw3:x64-linux",
       "SPDXID": "SPDXRef-binary",
-      "versionInfo": "22a27fe63783b44f9097e43b3dc91ffbb1e9071cf76605e4b535e31c842811b8",
+      "versionInfo": "68cc7acc913054513e3fc96f3ab89c383d52de5577d7ec94747a07735903e78f",
       "downloadLocation": "NONE",
       "licenseConcluded": "Zlib",
       "licenseDeclared": "NOASSERTION",

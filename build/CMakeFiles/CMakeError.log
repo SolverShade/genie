@@ -62,3 +62,39 @@ gmake: *** [Makefile:127: cmTC_9be75/fast] Error 2
 
 
 
+Determining if the function dnet_ntoa exists in the dnet failed with the following output:
+Change Dir: /home/powerbox/source/repos/genie/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9b0bb/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9b0bb.dir/build.make CMakeFiles/cmTC_9b0bb.dir/build
+gmake[1]: Entering directory '/home/powerbox/source/repos/genie/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9b0bb.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dnet_ntoa -o CMakeFiles/cmTC_9b0bb.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9b0bb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9b0bb.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=dnet_ntoa CMakeFiles/cmTC_9b0bb.dir/CheckFunctionExists.c.o -o cmTC_9b0bb  -ldnet 
+/usr/bin/ld: cannot find -ldnet: No such file or directory
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_9b0bb.dir/build.make:99: cmTC_9b0bb] Error 1
+gmake[1]: Leaving directory '/home/powerbox/source/repos/genie/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_9b0bb/fast] Error 2
+
+
+
+Determining if the function dnet_ntoa exists in the dnet_stub failed with the following output:
+Change Dir: /home/powerbox/source/repos/genie/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_980ba/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_980ba.dir/build.make CMakeFiles/cmTC_980ba.dir/build
+gmake[1]: Entering directory '/home/powerbox/source/repos/genie/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_980ba.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=dnet_ntoa -o CMakeFiles/cmTC_980ba.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_980ba
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_980ba.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=dnet_ntoa CMakeFiles/cmTC_980ba.dir/CheckFunctionExists.c.o -o cmTC_980ba  -ldnet_stub 
+/usr/bin/ld: cannot find -ldnet_stub: No such file or directory
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_980ba.dir/build.make:99: cmTC_980ba] Error 1
+gmake[1]: Leaving directory '/home/powerbox/source/repos/genie/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_980ba/fast] Error 2
+
+
+

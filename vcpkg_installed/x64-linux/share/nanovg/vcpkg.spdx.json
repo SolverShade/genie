@@ -1,0 +1,154 @@
+{
+  "$schema": "https://raw.githubusercontent.com/spdx/spdx-spec/v2.2.1/schemas/spdx-schema.json",
+  "spdxVersion": "SPDX-2.2",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "documentNamespace": "https://spdx.org/spdxdocs/nanovg-x64-linux-2019-08-30#6-4db370ef-caf3-4622-86a1-3711fd6898ea",
+  "name": "nanovg:x64-linux@2019-08-30#6 6100f6d335172ad6da51a9843e60a1b4ec2903fbe545398d8d3f6b31931ab51e",
+  "creationInfo": {
+    "creators": [
+      "Tool: vcpkg-2024-06-10-02590c430e4ed9215d27870138c2e579cc338772"
+    ],
+    "created": "2024-07-07T14:58:31Z"
+  },
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "GENERATES",
+      "relatedSpdxElement": "SPDXRef-binary"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-1"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-2"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-3"
+    },
+    {
+      "spdxElementId": "SPDXRef-binary",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-0",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-1",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-2",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-3",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    }
+  ],
+  "packages": [
+    {
+      "name": "nanovg",
+      "SPDXID": "SPDXRef-port",
+      "versionInfo": "2019-08-30#6",
+      "downloadLocation": "git+https://github.com/microsoft/vcpkg@be98decc778a823aedeec9c8c74ff6a3398f7642",
+      "homepage": "https://github.com/memononen/nanovg",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "description": "NanoVG is small antialiased vector graphics rendering library for OpenGL.",
+      "comment": "This is the port (recipe) consumed by vcpkg."
+    },
+    {
+      "name": "nanovg:x64-linux",
+      "SPDXID": "SPDXRef-binary",
+      "versionInfo": "6100f6d335172ad6da51a9843e60a1b4ec2903fbe545398d8d3f6b31931ab51e",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "This is a binary package built by vcpkg."
+    },
+    {
+      "SPDXID": "SPDXRef-resource-1",
+      "name": "memononen/nanovg",
+      "downloadLocation": "git+https://github.com/memononen/nanovg@1f9c8864fc556a1be4d4bf1d6bfe20cde25734b4",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "99a44f01114ee653a966d4695596886240752f5a06d540c408b5aeaebdcc5360fc2043276515695580d048649a20dc50409107f89c4ce506d2ccb83a0635d29f"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "fileName": ".//home/powerbox/.cache/vcpkg/registries/git-trees/be98decc778a823aedeec9c8c74ff6a3398f7642/nanovgConfig.cmake",
+      "SPDXID": "SPDXRef-file-0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7aa3e08f0a154cea513fe91e5b5ba13944537b535956b9e2b0f3c39cba0cc8d7"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": ".//home/powerbox/.cache/vcpkg/registries/git-trees/be98decc778a823aedeec9c8c74ff6a3398f7642/portfile.cmake",
+      "SPDXID": "SPDXRef-file-1",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "eef64c21127bf4fc480498ddcf46456ab82095993dd79f3a3ec07cd6d10f3393"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": ".//home/powerbox/.cache/vcpkg/registries/git-trees/be98decc778a823aedeec9c8c74ff6a3398f7642/CMakeLists.txt",
+      "SPDXID": "SPDXRef-file-2",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3e17730abc3e8e9531b5fd2b3e2c5cbb159c3c7fec0d638527733d45fc525e67"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": ".//home/powerbox/.cache/vcpkg/registries/git-trees/be98decc778a823aedeec9c8c74ff6a3398f7642/vcpkg.json",
+      "SPDXID": "SPDXRef-file-3",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a5ae76f79f7ab021666c52841ff0002a8bc4f08f7b9b4e866e14ccf24493dd6f"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    }
+  ]
+}

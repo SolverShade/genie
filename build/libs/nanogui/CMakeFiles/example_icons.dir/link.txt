@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -g CMakeFiles/example_icons.dir/src/example_icons.cpp.o -o example_icons  -Wl,-rpath,/home/powerbox/source/repos/genie/build/libs/nanogui libnanogui.so 

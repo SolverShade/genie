@@ -1,0 +1,154 @@
+{
+  "$schema": "https://raw.githubusercontent.com/spdx/spdx-spec/v2.2.1/schemas/spdx-schema.json",
+  "spdxVersion": "SPDX-2.2",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "documentNamespace": "https://spdx.org/spdxdocs/nanogui-x64-linux-2019-09-23#5-700e0a8f-3400-4e94-9758-f18e89e68971",
+  "name": "nanogui:x64-linux@2019-09-23#5 9036b473a4859298a00bd90a9035889c86939b0b4ddb9b78b928cb8c25eae9c5",
+  "creationInfo": {
+    "creators": [
+      "Tool: vcpkg-2024-06-10-02590c430e4ed9215d27870138c2e579cc338772"
+    ],
+    "created": "2024-07-07T15:16:01Z"
+  },
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "GENERATES",
+      "relatedSpdxElement": "SPDXRef-binary"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-1"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-2"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-3"
+    },
+    {
+      "spdxElementId": "SPDXRef-binary",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-0",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-1",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-2",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-3",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    }
+  ],
+  "packages": [
+    {
+      "name": "nanogui",
+      "SPDXID": "SPDXRef-port",
+      "versionInfo": "2019-09-23#5",
+      "downloadLocation": "git+https://github.com/microsoft/vcpkg@ba52e521c1d71e2e1c855913e9a1b437920a9fc9",
+      "homepage": "https://github.com/wjakob/nanogui",
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "description": "NanoGUI is a minimalistic cross-platform widget library for OpenGL 3.x or higher.",
+      "comment": "This is the port (recipe) consumed by vcpkg."
+    },
+    {
+      "name": "nanogui:x64-linux",
+      "SPDXID": "SPDXRef-binary",
+      "versionInfo": "9036b473a4859298a00bd90a9035889c86939b0b4ddb9b78b928cb8c25eae9c5",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "This is a binary package built by vcpkg."
+    },
+    {
+      "SPDXID": "SPDXRef-resource-1",
+      "name": "wjakob/nanogui",
+      "downloadLocation": "git+https://github.com/wjakob/nanogui@e9ec8a1a9861cf578d9c6e85a6420080aa715c03",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "36c93bf977862ced2df4030211e2b83625e60a11fc9fdb6c1f2996bb234758331d3f41a7fbafd25a5bca0239ed9bac9c93446a4a7fac4c5e6d7943af2be3e14a"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "fileName": ".//home/powerbox/.cache/vcpkg/registries/git-trees/ba52e521c1d71e2e1c855913e9a1b437920a9fc9/portfile.cmake",
+      "SPDXID": "SPDXRef-file-0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "62a6c78cafac14b25b051a671af770d0614d3238f79367935a790c368a6279a2"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": ".//home/powerbox/.cache/vcpkg/registries/git-trees/ba52e521c1d71e2e1c855913e9a1b437920a9fc9/fix-cmakelists.patch",
+      "SPDXID": "SPDXRef-file-1",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "cf27d353e13720dd161ca611dc2fd3bb5c1918e1f6d75a078d4e6eb161eb07e7"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": ".//home/powerbox/.cache/vcpkg/registries/git-trees/ba52e521c1d71e2e1c855913e9a1b437920a9fc9/fix-glad-dependence.patch",
+      "SPDXID": "SPDXRef-file-2",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "297151c677dbce4d8bcdef73c28e4fce16fb624ec39bdffb7eac129d30d25e30"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": ".//home/powerbox/.cache/vcpkg/registries/git-trees/ba52e521c1d71e2e1c855913e9a1b437920a9fc9/vcpkg.json",
+      "SPDXID": "SPDXRef-file-3",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "045d9490af0821725800a3ba1151989d26b019eac3fe9d79644e76b2ca096f61"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    }
+  ]
+}

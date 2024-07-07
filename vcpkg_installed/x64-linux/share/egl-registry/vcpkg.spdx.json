@@ -3,13 +3,13 @@
   "spdxVersion": "SPDX-2.2",
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
-  "documentNamespace": "https://spdx.org/spdxdocs/egl-registry-x64-linux-2024-01-25-5db07bc3-d009-40ad-88d9-1e1d900879f6",
-  "name": "egl-registry:x64-linux@2024-01-25 c7924898ba01a061f256ed98f6a8b909f4ba9d52ecd7e347fabe20a014015b23",
+  "documentNamespace": "https://spdx.org/spdxdocs/egl-registry-x64-linux-2024-01-25-943c6fbc-61ae-46cb-acc7-c177c114abcc",
+  "name": "egl-registry:x64-linux@2024-01-25 d6468ff7a775b01022735f173e29b8b44754bbd6f78d9dd3dd463252a4968ec9",
   "creationInfo": {
     "creators": [
       "Tool: vcpkg-2024-06-10-02590c430e4ed9215d27870138c2e579cc338772"
     ],
-    "created": "2024-06-17T17:13:43Z"
+    "created": "2024-07-07T14:56:31Z"
   },
   "relationships": [
     {
@@ -58,7 +58,7 @@
       "name": "egl-registry",
       "SPDXID": "SPDXRef-port",
       "versionInfo": "2024-01-25",
-      "downloadLocation": "git+https://github.com/Microsoft/vcpkg#ports/egl-registry",
+      "downloadLocation": "git+https://github.com/microsoft/vcpkg@d883db43133dd223c4ffdbef4193943f6784d43a",
       "homepage": "https://github.com/KhronosGroup/EGL-Registry",
       "licenseConcluded": "NOASSERTION",
       "licenseDeclared": "NOASSERTION",
@@ -69,7 +69,7 @@
     {
       "name": "egl-registry:x64-linux",
       "SPDXID": "SPDXRef-binary",
-      "versionInfo": "c7924898ba01a061f256ed98f6a8b909f4ba9d52ecd7e347fabe20a014015b23",
+      "versionInfo": "d6468ff7a775b01022735f173e29b8b44754bbd6f78d9dd3dd463252a4968ec9",
       "downloadLocation": "NONE",
       "licenseConcluded": "NOASSERTION",
       "licenseDeclared": "NOASSERTION",
@@ -93,7 +93,7 @@
   ],
   "files": [
     {
-      "fileName": ".//home/powerbox/source/tools/vcpkg/vcpkg/ports/egl-registry/portfile.cmake",
+      "fileName": ".//home/powerbox/.cache/vcpkg/registries/git-trees/d883db43133dd223c4ffdbef4193943f6784d43a/portfile.cmake",
       "SPDXID": "SPDXRef-file-0",
       "checksums": [
         {
@@ -105,7 +105,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": ".//home/powerbox/source/tools/vcpkg/vcpkg/ports/egl-registry/vcpkg.json",
+      "fileName": ".//home/powerbox/.cache/vcpkg/registries/git-trees/d883db43133dd223c4ffdbef4193943f6784d43a/vcpkg.json",
       "SPDXID": "SPDXRef-file-1",
       "checksums": [
         {
@@ -117,7 +117,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": ".//home/powerbox/source/tools/vcpkg/vcpkg/ports/egl-registry/copyright",
+      "fileName": ".//home/powerbox/.cache/vcpkg/registries/git-trees/d883db43133dd223c4ffdbef4193943f6784d43a/copyright",
       "SPDXID": "SPDXRef-file-2",
       "checksums": [
         {

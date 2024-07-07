@@ -124,15 +124,7 @@ genie: CMakeFiles/genie.dir/src/main.cpp.o
 genie: CMakeFiles/genie.dir/src/genie/GenieModel.cpp.o
 genie: CMakeFiles/genie.dir/src/genie/genieview.cpp.o
 genie: CMakeFiles/genie.dir/build.make
-genie: vcpkg_installed/x64-linux/debug/lib/libglfw3.a
-genie: vcpkg_installed/x64-linux/debug/lib/libimguid.a
-genie: vcpkg_installed/x64-linux/debug/lib/libglad.a
-genie: /usr/lib/x86_64-linux-gnu/libOpenGL.so
-genie: /usr/lib/x86_64-linux-gnu/libGLX.so
-genie: /usr/lib/x86_64-linux-gnu/libGLU.so
-genie: vcpkg_installed/x64-linux/debug/lib/libglfw3.a
-genie: /usr/lib/x86_64-linux-gnu/librt.a
-genie: /usr/lib/x86_64-linux-gnu/libm.so
+genie: libs/nanogui/libnanogui.so
 genie: CMakeFiles/genie.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/powerbox/source/repos/genie/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable genie"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/genie.dir/link.txt --verbose=$(VERBOSE)

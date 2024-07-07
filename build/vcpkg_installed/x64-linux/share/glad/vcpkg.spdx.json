@@ -3,13 +3,13 @@
   "spdxVersion": "SPDX-2.2",
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
-  "documentNamespace": "https://spdx.org/spdxdocs/glad-x64-linux-0.1.36-d77633c4-1403-4e8f-9e01-0efa513828a2",
-  "name": "glad:x64-linux@0.1.36 f8bc063ea90718b0d7ac1ee415c3ba5bc79d05a430a2e59a10cc4dbd71f8164b",
+  "documentNamespace": "https://spdx.org/spdxdocs/glad-x64-linux-0.1.36-1af566c2-e769-4b71-81de-49da4d67b193",
+  "name": "glad:x64-linux@0.1.36 16689a8c81a48fd1425c91efabc14b4159796dba9f5b06413912baa06032a8dc",
   "creationInfo": {
     "creators": [
       "Tool: vcpkg-2024-06-10-02590c430e4ed9215d27870138c2e579cc338772"
     ],
-    "created": "2024-06-17T17:13:58Z"
+    "created": "2024-07-07T14:56:45Z"
   },
   "relationships": [
     {
@@ -68,7 +68,7 @@
       "name": "glad",
       "SPDXID": "SPDXRef-port",
       "versionInfo": "0.1.36",
-      "downloadLocation": "git+https://github.com/Microsoft/vcpkg#ports/glad",
+      "downloadLocation": "git+https://github.com/microsoft/vcpkg@fa93b14c1581057e1d14650f5f15c9b0757dd548",
       "homepage": "https://github.com/Dav1dde/glad",
       "licenseConcluded": "MIT",
       "licenseDeclared": "NOASSERTION",
@@ -79,7 +79,7 @@
     {
       "name": "glad:x64-linux",
       "SPDXID": "SPDXRef-binary",
-      "versionInfo": "f8bc063ea90718b0d7ac1ee415c3ba5bc79d05a430a2e59a10cc4dbd71f8164b",
+      "versionInfo": "16689a8c81a48fd1425c91efabc14b4159796dba9f5b06413912baa06032a8dc",
       "downloadLocation": "NONE",
       "licenseConcluded": "MIT",
       "licenseDeclared": "NOASSERTION",
@@ -103,7 +103,7 @@
   ],
   "files": [
     {
-      "fileName": ".//home/powerbox/source/tools/vcpkg/vcpkg/ports/glad/find_python.patch",
+      "fileName": ".//home/powerbox/.cache/vcpkg/registries/git-trees/fa93b14c1581057e1d14650f5f15c9b0757dd548/find_python.patch",
       "SPDXID": "SPDXRef-file-0",
       "checksums": [
         {
@@ -115,7 +115,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": ".//home/powerbox/source/tools/vcpkg/vcpkg/ports/glad/portfile.cmake",
+      "fileName": ".//home/powerbox/.cache/vcpkg/registries/git-trees/fa93b14c1581057e1d14650f5f15c9b0757dd548/portfile.cmake",
       "SPDXID": "SPDXRef-file-1",
       "checksums": [
         {
@@ -127,7 +127,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": ".//home/powerbox/source/tools/vcpkg/vcpkg/ports/glad/encoding.patch",
+      "fileName": ".//home/powerbox/.cache/vcpkg/registries/git-trees/fa93b14c1581057e1d14650f5f15c9b0757dd548/encoding.patch",
       "SPDXID": "SPDXRef-file-2",
       "checksums": [
         {
@@ -139,7 +139,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": ".//home/powerbox/source/tools/vcpkg/vcpkg/ports/glad/vcpkg.json",
+      "fileName": ".//home/powerbox/.cache/vcpkg/registries/git-trees/fa93b14c1581057e1d14650f5f15c9b0757dd548/vcpkg.json",
       "SPDXID": "SPDXRef-file-3",
       "checksums": [
         {

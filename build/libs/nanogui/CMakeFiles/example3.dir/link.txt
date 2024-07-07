@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -g CMakeFiles/example3.dir/src/example3.cpp.o -o example3  -Wl,-rpath,/home/powerbox/source/repos/genie/build/libs/nanogui libnanogui.so -lX11 -lpthread -lGL -lrt -ldl 
