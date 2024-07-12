@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/genie.dir/src/main.cpp.o CMakeFiles/genie.dir/src/genie/GenieModel.cpp.o CMakeFiles/genie.dir/src/genie/genieview.cpp.o -o genie  -Wl,-rpath,/home/powerbox/source/repos/genie/build/libs/nanogui libs/nanogui/libnanogui.so 
+/usr/bin/c++ -g CMakeFiles/genie.dir/src/main.cpp.o CMakeFiles/genie.dir/src/genie/GenieController.cpp.o CMakeFiles/genie.dir/src/genie/GenieModel.cpp.o CMakeFiles/genie.dir/src/genie/GenieView.cpp.o -o genie  -Wl,-rpath,/home/powerbox/source/repos/genie/build/libs/nanogui libs/nanogui/libnanogui.so 

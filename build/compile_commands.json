@@ -6,13 +6,18 @@
 },
 {
   "directory": "/home/powerbox/source/repos/genie/build",
+  "command": "/usr/bin/c++ -DNANOGUI_SHARED -DNANOGUI_USE_OPENGL -DNVG_SHARED -I/home/powerbox/source/repos/genie/src -I/home/powerbox/source/repos/genie/libs/nanogui/include -I/home/powerbox/source/repos/genie/libs/nanogui/ext/nanovg/src -I/home/powerbox/source/repos/genie/libs/nanogui/ext/glfw/include -g -std=gnu++17 -o CMakeFiles/genie.dir/src/genie/GenieController.cpp.o -c /home/powerbox/source/repos/genie/src/genie/GenieController.cpp",
+  "file": "/home/powerbox/source/repos/genie/src/genie/GenieController.cpp"
+},
+{
+  "directory": "/home/powerbox/source/repos/genie/build",
   "command": "/usr/bin/c++ -DNANOGUI_SHARED -DNANOGUI_USE_OPENGL -DNVG_SHARED -I/home/powerbox/source/repos/genie/src -I/home/powerbox/source/repos/genie/libs/nanogui/include -I/home/powerbox/source/repos/genie/libs/nanogui/ext/nanovg/src -I/home/powerbox/source/repos/genie/libs/nanogui/ext/glfw/include -g -std=gnu++17 -o CMakeFiles/genie.dir/src/genie/GenieModel.cpp.o -c /home/powerbox/source/repos/genie/src/genie/GenieModel.cpp",
   "file": "/home/powerbox/source/repos/genie/src/genie/GenieModel.cpp"
 },
 {
   "directory": "/home/powerbox/source/repos/genie/build",
-  "command": "/usr/bin/c++ -DNANOGUI_SHARED -DNANOGUI_USE_OPENGL -DNVG_SHARED -I/home/powerbox/source/repos/genie/src -I/home/powerbox/source/repos/genie/libs/nanogui/include -I/home/powerbox/source/repos/genie/libs/nanogui/ext/nanovg/src -I/home/powerbox/source/repos/genie/libs/nanogui/ext/glfw/include -g -std=gnu++17 -o CMakeFiles/genie.dir/src/genie/genieview.cpp.o -c /home/powerbox/source/repos/genie/src/genie/genieview.cpp",
-  "file": "/home/powerbox/source/repos/genie/src/genie/genieview.cpp"
+  "command": "/usr/bin/c++ -DNANOGUI_SHARED -DNANOGUI_USE_OPENGL -DNVG_SHARED -I/home/powerbox/source/repos/genie/src -I/home/powerbox/source/repos/genie/libs/nanogui/include -I/home/powerbox/source/repos/genie/libs/nanogui/ext/nanovg/src -I/home/powerbox/source/repos/genie/libs/nanogui/ext/glfw/include -g -std=gnu++17 -o CMakeFiles/genie.dir/src/genie/GenieView.cpp.o -c /home/powerbox/source/repos/genie/src/genie/GenieView.cpp",
+  "file": "/home/powerbox/source/repos/genie/src/genie/GenieView.cpp"
 },
 {
   "directory": "/home/powerbox/source/repos/genie/build/libs/nanogui",

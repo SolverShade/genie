@@ -233,6 +233,30 @@ glfw/fast:
 	$(MAKE) $(MAKESILENT) -f libs/nanogui/ext/glfw/src/CMakeFiles/glfw.dir/build.make libs/nanogui/ext/glfw/src/CMakeFiles/glfw.dir/build
 .PHONY : glfw/fast
 
+src/genie/GenieController.o: src/genie/GenieController.cpp.o
+.PHONY : src/genie/GenieController.o
+
+# target to build an object file
+src/genie/GenieController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/src/genie/GenieController.cpp.o
+.PHONY : src/genie/GenieController.cpp.o
+
+src/genie/GenieController.i: src/genie/GenieController.cpp.i
+.PHONY : src/genie/GenieController.i
+
+# target to preprocess a source file
+src/genie/GenieController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/src/genie/GenieController.cpp.i
+.PHONY : src/genie/GenieController.cpp.i
+
+src/genie/GenieController.s: src/genie/GenieController.cpp.s
+.PHONY : src/genie/GenieController.s
+
+# target to generate assembly for a file
+src/genie/GenieController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/src/genie/GenieController.cpp.s
+.PHONY : src/genie/GenieController.cpp.s
+
 src/genie/GenieModel.o: src/genie/GenieModel.cpp.o
 .PHONY : src/genie/GenieModel.o
 
@@ -257,29 +281,29 @@ src/genie/GenieModel.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/src/genie/GenieModel.cpp.s
 .PHONY : src/genie/GenieModel.cpp.s
 
-src/genie/genieview.o: src/genie/genieview.cpp.o
-.PHONY : src/genie/genieview.o
+src/genie/GenieView.o: src/genie/GenieView.cpp.o
+.PHONY : src/genie/GenieView.o
 
 # target to build an object file
-src/genie/genieview.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/src/genie/genieview.cpp.o
-.PHONY : src/genie/genieview.cpp.o
+src/genie/GenieView.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/src/genie/GenieView.cpp.o
+.PHONY : src/genie/GenieView.cpp.o
 
-src/genie/genieview.i: src/genie/genieview.cpp.i
-.PHONY : src/genie/genieview.i
+src/genie/GenieView.i: src/genie/GenieView.cpp.i
+.PHONY : src/genie/GenieView.i
 
 # target to preprocess a source file
-src/genie/genieview.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/src/genie/genieview.cpp.i
-.PHONY : src/genie/genieview.cpp.i
+src/genie/GenieView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/src/genie/GenieView.cpp.i
+.PHONY : src/genie/GenieView.cpp.i
 
-src/genie/genieview.s: src/genie/genieview.cpp.s
-.PHONY : src/genie/genieview.s
+src/genie/GenieView.s: src/genie/GenieView.cpp.s
+.PHONY : src/genie/GenieView.s
 
 # target to generate assembly for a file
-src/genie/genieview.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/src/genie/genieview.cpp.s
-.PHONY : src/genie/genieview.cpp.s
+src/genie/GenieView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/src/genie/GenieView.cpp.s
+.PHONY : src/genie/GenieView.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -322,12 +346,15 @@ help:
 	@echo "... glfw"
 	@echo "... glfw_objects"
 	@echo "... nanogui"
+	@echo "... src/genie/GenieController.o"
+	@echo "... src/genie/GenieController.i"
+	@echo "... src/genie/GenieController.s"
 	@echo "... src/genie/GenieModel.o"
 	@echo "... src/genie/GenieModel.i"
 	@echo "... src/genie/GenieModel.s"
-	@echo "... src/genie/genieview.o"
-	@echo "... src/genie/genieview.i"
-	@echo "... src/genie/genieview.s"
+	@echo "... src/genie/GenieView.o"
+	@echo "... src/genie/GenieView.i"
+	@echo "... src/genie/GenieView.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

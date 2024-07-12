@@ -83,10 +83,24 @@ CMakeFiles/genie.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/genie.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/powerbox/source/repos/genie/src/main.cpp -o CMakeFiles/genie.dir/src/main.cpp.s
 
+CMakeFiles/genie.dir/src/genie/GenieController.cpp.o: CMakeFiles/genie.dir/flags.make
+CMakeFiles/genie.dir/src/genie/GenieController.cpp.o: ../src/genie/GenieController.cpp
+CMakeFiles/genie.dir/src/genie/GenieController.cpp.o: CMakeFiles/genie.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/powerbox/source/repos/genie/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/genie.dir/src/genie/GenieController.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/genie.dir/src/genie/GenieController.cpp.o -MF CMakeFiles/genie.dir/src/genie/GenieController.cpp.o.d -o CMakeFiles/genie.dir/src/genie/GenieController.cpp.o -c /home/powerbox/source/repos/genie/src/genie/GenieController.cpp
+
+CMakeFiles/genie.dir/src/genie/GenieController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/genie.dir/src/genie/GenieController.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/powerbox/source/repos/genie/src/genie/GenieController.cpp > CMakeFiles/genie.dir/src/genie/GenieController.cpp.i
+
+CMakeFiles/genie.dir/src/genie/GenieController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/genie.dir/src/genie/GenieController.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/powerbox/source/repos/genie/src/genie/GenieController.cpp -o CMakeFiles/genie.dir/src/genie/GenieController.cpp.s
+
 CMakeFiles/genie.dir/src/genie/GenieModel.cpp.o: CMakeFiles/genie.dir/flags.make
 CMakeFiles/genie.dir/src/genie/GenieModel.cpp.o: ../src/genie/GenieModel.cpp
 CMakeFiles/genie.dir/src/genie/GenieModel.cpp.o: CMakeFiles/genie.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/powerbox/source/repos/genie/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/genie.dir/src/genie/GenieModel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/powerbox/source/repos/genie/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/genie.dir/src/genie/GenieModel.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/genie.dir/src/genie/GenieModel.cpp.o -MF CMakeFiles/genie.dir/src/genie/GenieModel.cpp.o.d -o CMakeFiles/genie.dir/src/genie/GenieModel.cpp.o -c /home/powerbox/source/repos/genie/src/genie/GenieModel.cpp
 
 CMakeFiles/genie.dir/src/genie/GenieModel.cpp.i: cmake_force
@@ -97,36 +111,38 @@ CMakeFiles/genie.dir/src/genie/GenieModel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/genie.dir/src/genie/GenieModel.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/powerbox/source/repos/genie/src/genie/GenieModel.cpp -o CMakeFiles/genie.dir/src/genie/GenieModel.cpp.s
 
-CMakeFiles/genie.dir/src/genie/genieview.cpp.o: CMakeFiles/genie.dir/flags.make
-CMakeFiles/genie.dir/src/genie/genieview.cpp.o: ../src/genie/genieview.cpp
-CMakeFiles/genie.dir/src/genie/genieview.cpp.o: CMakeFiles/genie.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/powerbox/source/repos/genie/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/genie.dir/src/genie/genieview.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/genie.dir/src/genie/genieview.cpp.o -MF CMakeFiles/genie.dir/src/genie/genieview.cpp.o.d -o CMakeFiles/genie.dir/src/genie/genieview.cpp.o -c /home/powerbox/source/repos/genie/src/genie/genieview.cpp
+CMakeFiles/genie.dir/src/genie/GenieView.cpp.o: CMakeFiles/genie.dir/flags.make
+CMakeFiles/genie.dir/src/genie/GenieView.cpp.o: ../src/genie/GenieView.cpp
+CMakeFiles/genie.dir/src/genie/GenieView.cpp.o: CMakeFiles/genie.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/powerbox/source/repos/genie/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/genie.dir/src/genie/GenieView.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/genie.dir/src/genie/GenieView.cpp.o -MF CMakeFiles/genie.dir/src/genie/GenieView.cpp.o.d -o CMakeFiles/genie.dir/src/genie/GenieView.cpp.o -c /home/powerbox/source/repos/genie/src/genie/GenieView.cpp
 
-CMakeFiles/genie.dir/src/genie/genieview.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/genie.dir/src/genie/genieview.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/powerbox/source/repos/genie/src/genie/genieview.cpp > CMakeFiles/genie.dir/src/genie/genieview.cpp.i
+CMakeFiles/genie.dir/src/genie/GenieView.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/genie.dir/src/genie/GenieView.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/powerbox/source/repos/genie/src/genie/GenieView.cpp > CMakeFiles/genie.dir/src/genie/GenieView.cpp.i
 
-CMakeFiles/genie.dir/src/genie/genieview.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/genie.dir/src/genie/genieview.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/powerbox/source/repos/genie/src/genie/genieview.cpp -o CMakeFiles/genie.dir/src/genie/genieview.cpp.s
+CMakeFiles/genie.dir/src/genie/GenieView.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/genie.dir/src/genie/GenieView.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/powerbox/source/repos/genie/src/genie/GenieView.cpp -o CMakeFiles/genie.dir/src/genie/GenieView.cpp.s
 
 # Object files for target genie
 genie_OBJECTS = \
 "CMakeFiles/genie.dir/src/main.cpp.o" \
+"CMakeFiles/genie.dir/src/genie/GenieController.cpp.o" \
 "CMakeFiles/genie.dir/src/genie/GenieModel.cpp.o" \
-"CMakeFiles/genie.dir/src/genie/genieview.cpp.o"
+"CMakeFiles/genie.dir/src/genie/GenieView.cpp.o"
 
 # External object files for target genie
 genie_EXTERNAL_OBJECTS =
 
 genie: CMakeFiles/genie.dir/src/main.cpp.o
+genie: CMakeFiles/genie.dir/src/genie/GenieController.cpp.o
 genie: CMakeFiles/genie.dir/src/genie/GenieModel.cpp.o
-genie: CMakeFiles/genie.dir/src/genie/genieview.cpp.o
+genie: CMakeFiles/genie.dir/src/genie/GenieView.cpp.o
 genie: CMakeFiles/genie.dir/build.make
 genie: libs/nanogui/libnanogui.so
 genie: CMakeFiles/genie.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/powerbox/source/repos/genie/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable genie"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/powerbox/source/repos/genie/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable genie"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/genie.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

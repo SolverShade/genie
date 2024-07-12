@@ -1,9 +1,8 @@
 // clang-format off
-#include "GLFW/glfw3.h"
+#include "genie/GenieView.hpp"
 #include "nanogui/vector.h"
 #include <GL/gl.h>
 #include <GLFW/glfw3.h>
-#include <iostream>
 #include <nanogui/nanogui.h>
 // clang-format on
 
@@ -17,20 +16,13 @@ int main() {
   Screen *screen =
       new Screen(Vector2i(640, 480), "NanoGUI Transparent Window", false);
 
-  // Set the screen's background color to be transparent (RGBA)
-  screen->set_background(Color(0, 0, 0, 0));
-
-  Window *window = new Window(screen, "Button Demo");
-  window->set_position(Vector2i(15, 15));
-  window->set_layout(new GroupLayout());
-
-  Button *button = new Button(window, "Click me!");
-  button->set_callback([]() { std::cout << "Button clicked!" << std::endl; });
-
-  screen->perform_layout();
+  GenieView genieView = GenieView(screen);
+  screen->draw_all();
   screen->set_visible(true);
 
   mainloop();
+
+  nanogui::shutdown();
 
   return 0;
 }
