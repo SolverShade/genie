@@ -287,10 +287,10 @@ CMakeFiles/genie.dir/src/genie/GenieView.cpp.o
  /usr/include/c++/11/algorithm
  /usr/include/c++/11/pstl/glue_algorithm_defs.h
  /usr/include/c++/11/pstl/execution_defs.h
+ /home/powerbox/source/repos/genie/libs/nanogui/include/nanogui/window.h
  /usr/include/c++/11/iostream
  /home/powerbox/source/repos/genie/libs/nanogui/include/nanogui/nanogui.h
  /home/powerbox/source/repos/genie/libs/nanogui/include/nanogui/metal.h
- /home/powerbox/source/repos/genie/libs/nanogui/include/nanogui/window.h
  /home/powerbox/source/repos/genie/libs/nanogui/include/nanogui/layout.h
  /home/powerbox/source/repos/genie/libs/nanogui/include/nanogui/label.h
  /home/powerbox/source/repos/genie/libs/nanogui/include/nanogui/checkbox.h
@@ -316,6 +316,22 @@ CMakeFiles/genie.dir/src/genie/GenieView.cpp.o
  /home/powerbox/source/repos/genie/libs/nanogui/include/nanogui/renderpass.h
  /home/powerbox/source/repos/genie/libs/nanogui/include/nanogui/canvas.h
  /home/powerbox/source/repos/genie/libs/nanogui/include/nanogui/imageview.h
+ /home/powerbox/source/repos/genie/libs/nanogui/ext/nanovg/src/stb_image.h
+ /usr/include/c++/11/stdlib.h
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h
+ /usr/include/limits.h
+ /usr/include/x86_64-linux-gnu/bits/posix1_lim.h
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h
+ /usr/include/linux/limits.h
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h
+ /usr/include/x86_64-linux-gnu/bits/uio_lim.h
+ /usr/include/c++/11/math.h
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h
 
 CMakeFiles/genie.dir/src/main.cpp.o
  /home/powerbox/source/repos/genie/src/main.cpp
@@ -546,13 +562,13 @@ CMakeFiles/genie.dir/src/main.cpp.o
  /usr/include/c++/11/pstl/glue_algorithm_defs.h
  /usr/include/c++/11/pstl/execution_defs.h
  /home/powerbox/source/repos/genie/libs/nanogui/include/nanogui/texture.h
+ /home/powerbox/source/repos/genie/libs/nanogui/include/nanogui/window.h
+ /home/powerbox/source/repos/genie/libs/nanogui/ext/glfw/include/GLFW/glfw3.h
  /usr/include/GL/gl.h
  /usr/include/GL/glext.h
  /usr/include/KHR/khrplatform.h
- /home/powerbox/source/repos/genie/libs/nanogui/ext/glfw/include/GLFW/glfw3.h
  /home/powerbox/source/repos/genie/libs/nanogui/include/nanogui/nanogui.h
  /home/powerbox/source/repos/genie/libs/nanogui/include/nanogui/metal.h
- /home/powerbox/source/repos/genie/libs/nanogui/include/nanogui/window.h
  /home/powerbox/source/repos/genie/libs/nanogui/include/nanogui/layout.h
  /home/powerbox/source/repos/genie/libs/nanogui/include/nanogui/label.h
  /home/powerbox/source/repos/genie/libs/nanogui/include/nanogui/checkbox.h
@@ -602,4 +618,6 @@ CMakeFiles/genie.dir/src/main.cpp.o
  /home/powerbox/source/repos/genie/libs/nanogui/include/nanogui/renderpass.h
  /home/powerbox/source/repos/genie/libs/nanogui/include/nanogui/canvas.h
  /home/powerbox/source/repos/genie/libs/nanogui/include/nanogui/imageview.h
+ /home/powerbox/source/repos/genie/libs/nanogui/include/nanogui/opengl.h
+ /home/powerbox/source/repos/genie/libs/nanogui/ext/nanovg/src/nanovg.h
 

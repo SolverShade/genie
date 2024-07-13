@@ -284,10 +284,10 @@ CMakeFiles/genie.dir/src/genie/GenieView.cpp.o: ../src/genie/GenieView.cpp \
   /usr/include/c++/11/algorithm \
   /usr/include/c++/11/pstl/glue_algorithm_defs.h \
   /usr/include/c++/11/pstl/execution_defs.h \
+  ../libs/nanogui/include/nanogui/window.h \
   /usr/include/c++/11/iostream \
   ../libs/nanogui/include/nanogui/nanogui.h \
   ../libs/nanogui/include/nanogui/metal.h \
-  ../libs/nanogui/include/nanogui/window.h \
   ../libs/nanogui/include/nanogui/layout.h \
   ../libs/nanogui/include/nanogui/label.h \
   ../libs/nanogui/include/nanogui/checkbox.h \
@@ -312,7 +312,23 @@ CMakeFiles/genie.dir/src/genie/GenieView.cpp.o: ../src/genie/GenieView.cpp \
   ../libs/nanogui/include/nanogui/shader.h \
   ../libs/nanogui/include/nanogui/renderpass.h \
   ../libs/nanogui/include/nanogui/canvas.h \
-  ../libs/nanogui/include/nanogui/imageview.h
+  ../libs/nanogui/include/nanogui/imageview.h \
+  ../libs/nanogui/ext/nanovg/src/stb_image.h \
+  /usr/include/c++/11/stdlib.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
+  /usr/include/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+  /usr/include/linux/limits.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+  /usr/include/c++/11/math.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h
 
 CMakeFiles/genie.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/stdc-predef.h \
@@ -542,13 +558,13 @@ CMakeFiles/genie.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/c++/11/pstl/glue_algorithm_defs.h \
   /usr/include/c++/11/pstl/execution_defs.h \
   ../libs/nanogui/include/nanogui/texture.h \
+  ../libs/nanogui/include/nanogui/window.h \
+  ../libs/nanogui/ext/glfw/include/GLFW/glfw3.h \
   /usr/include/GL/gl.h \
   /usr/include/GL/glext.h \
   /usr/include/KHR/khrplatform.h \
-  ../libs/nanogui/ext/glfw/include/GLFW/glfw3.h \
   ../libs/nanogui/include/nanogui/nanogui.h \
   ../libs/nanogui/include/nanogui/metal.h \
-  ../libs/nanogui/include/nanogui/window.h \
   ../libs/nanogui/include/nanogui/layout.h \
   ../libs/nanogui/include/nanogui/label.h \
   ../libs/nanogui/include/nanogui/checkbox.h \
@@ -597,14 +613,40 @@ CMakeFiles/genie.dir/src/main.cpp.o: ../src/main.cpp \
   ../libs/nanogui/include/nanogui/shader.h \
   ../libs/nanogui/include/nanogui/renderpass.h \
   ../libs/nanogui/include/nanogui/canvas.h \
-  ../libs/nanogui/include/nanogui/imageview.h
+  ../libs/nanogui/include/nanogui/imageview.h \
+  ../libs/nanogui/include/nanogui/opengl.h \
+  ../libs/nanogui/ext/nanovg/src/nanovg.h
 
 
-../libs/nanogui/ext/glfw/include/GLFW/glfw3.h:
+../libs/nanogui/ext/nanovg/src/nanovg.h:
+
+../libs/nanogui/include/nanogui/opengl.h:
 
 /usr/include/GL/glext.h:
 
+../libs/nanogui/ext/glfw/include/GLFW/glfw3.h:
+
 ../src/main.cpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h:
+
+/usr/include/c++/11/math.h:
+
+/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/local_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:
+
+/usr/include/c++/11/stdlib.h:
 
 ../libs/nanogui/include/nanogui/canvas.h:
 
@@ -634,9 +676,9 @@ CMakeFiles/genie.dir/src/main.cpp.o: ../src/main.cpp \
 
 ../libs/nanogui/include/nanogui/layout.h:
 
-../libs/nanogui/include/nanogui/window.h:
-
 ../libs/nanogui/include/nanogui/metal.h:
+
+../libs/nanogui/include/nanogui/window.h:
 
 /usr/include/c++/11/algorithm:
 
@@ -698,6 +740,8 @@ CMakeFiles/genie.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
+/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
+
 /usr/include/c++/11/string:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
@@ -739,6 +783,8 @@ CMakeFiles/genie.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/libintl.h:
 
 /usr/include/c++/11/bits/stl_vector.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h:
 
 /usr/include/c++/11/system_error:
 
@@ -802,6 +848,8 @@ CMakeFiles/genie.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
+/usr/include/linux/limits.h:
+
 /usr/include/c++/11/bits/shared_ptr_base.h:
 
 /usr/include/c++/11/bits/basic_string.h:
@@ -864,6 +912,8 @@ CMakeFiles/genie.dir/src/main.cpp.o: ../src/main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h:
+
 /usr/include/c++/11/debug/debug.h:
 
 /usr/include/features-time64.h:
@@ -921,6 +971,8 @@ CMakeFiles/genie.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/c++/11/bits/memoryfwd.h:
 
 /usr/include/c++/11/bits/stl_function.h:
+
+/usr/include/limits.h:
 
 /usr/include/c++/11/bits/stl_relops.h:
 
@@ -1135,6 +1187,8 @@ CMakeFiles/genie.dir/src/main.cpp.o: ../src/main.cpp \
 /usr/include/c++/11/bits/node_handle.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
+
+../libs/nanogui/ext/nanovg/src/stb_image.h:
 
 /usr/include/c++/11/bits/locale_classes.tcc:
 

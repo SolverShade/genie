@@ -3,6 +3,7 @@
 #define GENIEVIEW_HPP
 
 #include "nanogui/screen.h"
+#include "nanogui/window.h"
 
 class GenieView {
 public:
@@ -10,7 +11,10 @@ public:
 
 private:
   void setupScreenContent();
+  void loadGenieWindow();
+  void onGenieFocus();
   nanogui::Screen *screen;
+  nanogui::Window *genieWindow;
 };
 
 #endif
