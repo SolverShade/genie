@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/genie.dir/src/genie/GenieModel.cpp.o.d"
   "CMakeFiles/genie.dir/src/genie/GenieView.cpp.o"
   "CMakeFiles/genie.dir/src/genie/GenieView.cpp.o.d"
+  "CMakeFiles/genie.dir/src/graphics/ContentLoader.cpp.o"
+  "CMakeFiles/genie.dir/src/graphics/ContentLoader.cpp.o.d"
   "CMakeFiles/genie.dir/src/main.cpp.o"
   "CMakeFiles/genie.dir/src/main.cpp.o.d"
   "genie"

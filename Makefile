@@ -4,6 +4,13 @@ CXX = g++
 # Define compiler flags
 CXXFLAGS = -std=c++17 -Wall -Wextra -Werror
 
+# Define build types
+DEBUG_FLAGS = -g
+RELEASE_FLAGS = -O2
+
+# Define the build type (default to debug)
+BUILD_TYPE = debug
+
 # Define the source files and the output executable
 SRC_DIR = src
 BIN_DIR = bin

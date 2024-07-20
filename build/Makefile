@@ -305,6 +305,30 @@ src/genie/GenieView.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/src/genie/GenieView.cpp.s
 .PHONY : src/genie/GenieView.cpp.s
 
+src/graphics/ContentLoader.o: src/graphics/ContentLoader.cpp.o
+.PHONY : src/graphics/ContentLoader.o
+
+# target to build an object file
+src/graphics/ContentLoader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/src/graphics/ContentLoader.cpp.o
+.PHONY : src/graphics/ContentLoader.cpp.o
+
+src/graphics/ContentLoader.i: src/graphics/ContentLoader.cpp.i
+.PHONY : src/graphics/ContentLoader.i
+
+# target to preprocess a source file
+src/graphics/ContentLoader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/src/graphics/ContentLoader.cpp.i
+.PHONY : src/graphics/ContentLoader.cpp.i
+
+src/graphics/ContentLoader.s: src/graphics/ContentLoader.cpp.s
+.PHONY : src/graphics/ContentLoader.s
+
+# target to generate assembly for a file
+src/graphics/ContentLoader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/src/graphics/ContentLoader.cpp.s
+.PHONY : src/graphics/ContentLoader.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -355,6 +379,9 @@ help:
 	@echo "... src/genie/GenieView.o"
 	@echo "... src/genie/GenieView.i"
 	@echo "... src/genie/GenieView.s"
+	@echo "... src/graphics/ContentLoader.o"
+	@echo "... src/graphics/ContentLoader.i"
+	@echo "... src/graphics/ContentLoader.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

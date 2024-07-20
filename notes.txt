@@ -1,0 +1,3 @@
+nanogui example library in repos had version of nanogui that
+wasn't being used in this project, the examples being used to 
+create image loading therefore were not accurate. 
