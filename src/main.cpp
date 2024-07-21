@@ -29,7 +29,7 @@ int main() {
 
   std::cout << p_path + "/content" << std::endl;
 
-  std::map<std::string, Texture> images =
+  std::map<std::string, shared_ptr<Texture>> images =
       contentLoader.LoadTextures(ctx, p_path + "/content");
 
   GenieView genieView = GenieView(screen);

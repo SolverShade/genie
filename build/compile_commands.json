@@ -25,6 +25,11 @@
   "file": "/home/powerbox/source/repos/genie/src/graphics/ContentLoader.cpp"
 },
 {
+  "directory": "/home/powerbox/source/repos/genie/build",
+  "command": "/usr/bin/c++ -DNANOGUI_SHARED -DNANOGUI_USE_OPENGL -DNVG_SHARED -I/home/powerbox/source/repos/genie/src -I/home/powerbox/source/repos/genie/libs/nanogui/include -I/home/powerbox/source/repos/genie/libs/nanogui/ext/nanovg/src -I/home/powerbox/source/repos/genie/libs/nanogui/ext/glfw/include -g -std=gnu++17 -o CMakeFiles/genie.dir/src/utillities/TextParsing.cpp.o -c /home/powerbox/source/repos/genie/src/utillities/TextParsing.cpp",
+  "file": "/home/powerbox/source/repos/genie/src/utillities/TextParsing.cpp"
+},
+{
   "directory": "/home/powerbox/source/repos/genie/build/libs/nanogui",
   "command": "/usr/bin/cc -DNANOGUI_BUILD -DNANOGUI_SHARED -DNANOGUI_USE_OPENGL -DNVG_BUILD -DNVG_SHARED -DNVG_STB_IMAGE_IMPLEMENTATION -D_GLFW_BUILD_DLL -I/home/powerbox/source/repos/genie/build/libs/nanogui -I/home/powerbox/source/repos/genie/libs/nanogui/include -I/home/powerbox/source/repos/genie/libs/nanogui/ext/nanovg/src -I/home/powerbox/source/repos/genie/libs/nanogui/ext/glfw/include -g -fPIC -march=nehalem -Wno-unused-result -o CMakeFiles/nanogui.dir/ext/nanovg/src/nanovg.c.o -c /home/powerbox/source/repos/genie/libs/nanogui/ext/nanovg/src/nanovg.c",
   "file": "/home/powerbox/source/repos/genie/libs/nanogui/ext/nanovg/src/nanovg.c"

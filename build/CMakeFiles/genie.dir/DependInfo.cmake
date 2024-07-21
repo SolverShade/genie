@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/powerbox/source/repos/genie/src/genie/GenieView.cpp" "CMakeFiles/genie.dir/src/genie/GenieView.cpp.o" "gcc" "CMakeFiles/genie.dir/src/genie/GenieView.cpp.o.d"
   "/home/powerbox/source/repos/genie/src/graphics/ContentLoader.cpp" "CMakeFiles/genie.dir/src/graphics/ContentLoader.cpp.o" "gcc" "CMakeFiles/genie.dir/src/graphics/ContentLoader.cpp.o.d"
   "/home/powerbox/source/repos/genie/src/main.cpp" "CMakeFiles/genie.dir/src/main.cpp.o" "gcc" "CMakeFiles/genie.dir/src/main.cpp.o.d"
+  "/home/powerbox/source/repos/genie/src/utillities/TextParsing.cpp" "CMakeFiles/genie.dir/src/utillities/TextParsing.cpp.o" "gcc" "CMakeFiles/genie.dir/src/utillities/TextParsing.cpp.o.d"
   )
 
 # Targets to which this target links.

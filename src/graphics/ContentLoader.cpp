@@ -5,6 +5,7 @@
 #include <nanogui/texture.h>
 #include <nanogui/vector.h>
 #include <utility> // for std::pair
+#include <utillities/TextParsing.hpp>
 
 #define STB_IMAGE_STATIC
 #define STB_IMAGE_IMPLEMENTATION
@@ -21,9 +22,9 @@ using namespace nanogui;
 
 ContentLoader::ContentLoader() { cout << "created content loader" << endl; }
 
-map<string, Texture> ContentLoader::LoadTextures(NVGcontext *ctx,
-                                                 string contentPath) {
-  map<string, Texture> textureMap;
+map<string, shared_ptr<Texture>>
+ContentLoader::LoadTextures(NVGcontext *ctx, string contentPath) {
+  map<string, shared_ptr<Texture>> textureMap;
   std::vector<std::pair<int, std::string>> imageInfos;
 
   try {
@@ -44,15 +45,17 @@ map<string, Texture> ContentLoader::LoadTextures(NVGcontext *ctx,
                              stbi_image_free);
     assert(n == 4);
 
-    Texture tex =
-        Texture(Texture::PixelFormat::RGBA, Texture::ComponentFormat::UInt8,
-                size, Texture::InterpolationMode::Trilinear,
-                Texture::InterpolationMode::Nearest);
+    shared_ptr<Texture> tex = make_shared<Texture>(
+        Texture::PixelFormat::RGBA, Texture::ComponentFormat::UInt8, size,
+        Texture::InterpolationMode::Trilinear,
+        Texture::InterpolationMode::Nearest);
 
-    tex.upload(texture_data.get());
-    // textureMap[imageInfo.second] = tex;
-    m_images.emplace_back(tex, std::move(texture_data));
-    cout << imageInfo.second << endl;
+    tex->upload(texture_data.get());
+    string textureName = TextParsing::GetFileName(imageInfo.second);
+    textureMap[textureName] = tex;
+
+    cout << "path: " << imageInfo.second << endl;
+    cout << "name: " << textureName << endl;
   }
 
   return textureMap;

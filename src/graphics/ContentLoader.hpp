@@ -2,8 +2,12 @@
 #define CONTENTLOADER_HPP
 
 #include <map>
+#include <memory>
 #include <nanogui/common.h>
 #include <string>
+
+using namespace std;
+using namespace nanogui;
 
 class ContentLoader {
 public:
@@ -17,8 +21,8 @@ public:
    * @param 'contentPath' path to directory where images are stored.
    * @return Dictonary of name keys and texture values
    */
-  std::map<std::string, nanogui::Texture> LoadTextures(NVGcontext *ctx,
-                                                       std::string contentPath);
+  std::map<std::string, shared_ptr<Texture>>
+  LoadTextures(NVGcontext *ctx, std::string contentPath);
 };
 
 #endif

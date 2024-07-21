@@ -353,6 +353,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/utillities/TextParsing.o: src/utillities/TextParsing.cpp.o
+.PHONY : src/utillities/TextParsing.o
+
+# target to build an object file
+src/utillities/TextParsing.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/src/utillities/TextParsing.cpp.o
+.PHONY : src/utillities/TextParsing.cpp.o
+
+src/utillities/TextParsing.i: src/utillities/TextParsing.cpp.i
+.PHONY : src/utillities/TextParsing.i
+
+# target to preprocess a source file
+src/utillities/TextParsing.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/src/utillities/TextParsing.cpp.i
+.PHONY : src/utillities/TextParsing.cpp.i
+
+src/utillities/TextParsing.s: src/utillities/TextParsing.cpp.s
+.PHONY : src/utillities/TextParsing.s
+
+# target to generate assembly for a file
+src/utillities/TextParsing.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/src/utillities/TextParsing.cpp.s
+.PHONY : src/utillities/TextParsing.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -385,6 +409,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/utillities/TextParsing.o"
+	@echo "... src/utillities/TextParsing.i"
+	@echo "... src/utillities/TextParsing.s"
 .PHONY : help
 
 

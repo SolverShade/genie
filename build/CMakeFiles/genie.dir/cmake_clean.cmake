@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/genie.dir/src/graphics/ContentLoader.cpp.o.d"
   "CMakeFiles/genie.dir/src/main.cpp.o"
   "CMakeFiles/genie.dir/src/main.cpp.o.d"
+  "CMakeFiles/genie.dir/src/utillities/TextParsing.cpp.o"
+  "CMakeFiles/genie.dir/src/utillities/TextParsing.cpp.o.d"
   "genie"
   "genie.pdb"
 )
