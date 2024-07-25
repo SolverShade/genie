@@ -14,6 +14,7 @@ set(NANOGUI_BUILD_PYTHON  OFF CACHE BOOL " " FORCE)
 set(NANOGUI_INSTALL       OFF CACHE BOOL " " FORCE)
 
 add_subdirectory(libs/nanogui)
+add_subdirectory(libs/glad)
 
 set_property(TARGET glfw glfw_objects nanogui PROPERTY FOLDER "dependencies")
 
@@ -22,8 +23,8 @@ add_definitions(${NANOGUI_EXTRA_DEFS})
 
 # On top of adding the path to nanogui/include, you may need extras
 include_directories(${NANOGUI_EXTRA_INCS})
-
 include_directories(${PROJECT_SOURCE_DIR}/src)
+include_directories(${PROJECT_SOURCE_DIR}/libs/glad/include/glad)
 
 file(GLOB_RECURSE SOURCE_FILES
    "${PROJECT_SOURCE_DIR}/src/*.cpp"
@@ -31,7 +32,7 @@ file(GLOB_RECURSE SOURCE_FILES
    "${PROJECT_SOURCE_DIR}/src/*.hpp"
 )
 
-add_executable(genie "${CMAKE_SOURCE_DIR}/src/main.cpp" ${SOURCE_FILES})
+add_executable(genie "${CMAKE_SOURCE_DIR}/src/main.cpp" ${SOURCE_FILES} "${CMAKE_SOURCE_DIR}/libs/glad/src/glad.c")
 target_link_libraries(genie nanogui ${NANOGUI_EXTRA_LIBS})
 
 target_compile_features(

@@ -233,6 +233,43 @@ glfw/fast:
 	$(MAKE) $(MAKESILENT) -f libs/nanogui/ext/glfw/src/CMakeFiles/glfw.dir/build.make libs/nanogui/ext/glfw/src/CMakeFiles/glfw.dir/build
 .PHONY : glfw/fast
 
+#=============================================================================
+# Target rules for targets named glad
+
+# Build rule for target.
+glad: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glad
+.PHONY : glad
+
+# fast build rule for target.
+glad/fast:
+	$(MAKE) $(MAKESILENT) -f libs/glad/CMakeFiles/glad.dir/build.make libs/glad/CMakeFiles/glad.dir/build
+.PHONY : glad/fast
+
+libs/glad/src/glad.o: libs/glad/src/glad.c.o
+.PHONY : libs/glad/src/glad.o
+
+# target to build an object file
+libs/glad/src/glad.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/libs/glad/src/glad.c.o
+.PHONY : libs/glad/src/glad.c.o
+
+libs/glad/src/glad.i: libs/glad/src/glad.c.i
+.PHONY : libs/glad/src/glad.i
+
+# target to preprocess a source file
+libs/glad/src/glad.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/libs/glad/src/glad.c.i
+.PHONY : libs/glad/src/glad.c.i
+
+libs/glad/src/glad.s: libs/glad/src/glad.c.s
+.PHONY : libs/glad/src/glad.s
+
+# target to generate assembly for a file
+libs/glad/src/glad.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/libs/glad/src/glad.c.s
+.PHONY : libs/glad/src/glad.c.s
+
 src/genie/GenieController.o: src/genie/GenieController.cpp.o
 .PHONY : src/genie/GenieController.o
 
@@ -305,29 +342,29 @@ src/genie/GenieView.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/src/genie/GenieView.cpp.s
 .PHONY : src/genie/GenieView.cpp.s
 
-src/graphics/ContentLoader.o: src/graphics/ContentLoader.cpp.o
-.PHONY : src/graphics/ContentLoader.o
+src/graphics/Content.o: src/graphics/Content.cpp.o
+.PHONY : src/graphics/Content.o
 
 # target to build an object file
-src/graphics/ContentLoader.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/src/graphics/ContentLoader.cpp.o
-.PHONY : src/graphics/ContentLoader.cpp.o
+src/graphics/Content.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/src/graphics/Content.cpp.o
+.PHONY : src/graphics/Content.cpp.o
 
-src/graphics/ContentLoader.i: src/graphics/ContentLoader.cpp.i
-.PHONY : src/graphics/ContentLoader.i
+src/graphics/Content.i: src/graphics/Content.cpp.i
+.PHONY : src/graphics/Content.i
 
 # target to preprocess a source file
-src/graphics/ContentLoader.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/src/graphics/ContentLoader.cpp.i
-.PHONY : src/graphics/ContentLoader.cpp.i
+src/graphics/Content.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/src/graphics/Content.cpp.i
+.PHONY : src/graphics/Content.cpp.i
 
-src/graphics/ContentLoader.s: src/graphics/ContentLoader.cpp.s
-.PHONY : src/graphics/ContentLoader.s
+src/graphics/Content.s: src/graphics/Content.cpp.s
+.PHONY : src/graphics/Content.s
 
 # target to generate assembly for a file
-src/graphics/ContentLoader.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/src/graphics/ContentLoader.cpp.s
-.PHONY : src/graphics/ContentLoader.cpp.s
+src/graphics/Content.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/src/graphics/Content.cpp.s
+.PHONY : src/graphics/Content.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -391,9 +428,13 @@ help:
 	@echo "... example4"
 	@echo "... example_icons"
 	@echo "... genie"
+	@echo "... glad"
 	@echo "... glfw"
 	@echo "... glfw_objects"
 	@echo "... nanogui"
+	@echo "... libs/glad/src/glad.o"
+	@echo "... libs/glad/src/glad.i"
+	@echo "... libs/glad/src/glad.s"
 	@echo "... src/genie/GenieController.o"
 	@echo "... src/genie/GenieController.i"
 	@echo "... src/genie/GenieController.s"
@@ -403,9 +444,9 @@ help:
 	@echo "... src/genie/GenieView.o"
 	@echo "... src/genie/GenieView.i"
 	@echo "... src/genie/GenieView.s"
-	@echo "... src/graphics/ContentLoader.o"
-	@echo "... src/graphics/ContentLoader.i"
-	@echo "... src/graphics/ContentLoader.s"
+	@echo "... src/graphics/Content.o"
+	@echo "... src/graphics/Content.i"
+	@echo "... src/graphics/Content.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

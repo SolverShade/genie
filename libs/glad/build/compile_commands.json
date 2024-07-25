@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/powerbox/source/repos/genie/libs/glad/build",
+  "command": "/usr/bin/cc  -I/home/powerbox/source/repos/genie/libs/glad/src -I/home/powerbox/source/repos/genie/libs/glad/include -I/home/powerbox/source/repos/genie/libs/glad/include/glad  -o CMakeFiles/glad.dir/src/glad.c.o -c /home/powerbox/source/repos/genie/libs/glad/src/glad.c",
+  "file": "/home/powerbox/source/repos/genie/libs/glad/src/glad.c"
+},
+{
+  "directory": "/home/powerbox/source/repos/genie/libs/glad/build",
+  "command": "/usr/bin/c++  -I/home/powerbox/source/repos/genie/libs/glad/src -I/home/powerbox/source/repos/genie/libs/glad/include -I/home/powerbox/source/repos/genie/libs/glad/include/glad  -o CMakeFiles/glad.dir/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.o -c /home/powerbox/source/repos/genie/libs/glad/build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp",
+  "file": "/home/powerbox/source/repos/genie/libs/glad/build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp"
+}
+]

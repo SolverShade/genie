@@ -1,14 +1,11 @@
-#include "nanogui/texture.h"
+#include "nanogui/theme.h"
 #include <filesystem>
 #include <genie/GenieView.hpp>
+#include <graphics/Content.hpp>
 #include <iostream>
 #include <nanogui/nanogui.h>
 #include <nanogui/screen.h>
 #include <ostream>
-
-// Include stb_image.h
-#define STB_IMAGE_IMPLEMENTATION
-#include "stb_image.h"
 
 using namespace nanogui;
 
@@ -21,32 +18,13 @@ void GenieView::loadGenieWindow() {
   genieWindow->set_position(Vector2i(30, 15));
   genieWindow->set_size(Vector2i(300, 300));
 
-  // Texture *genieTexture = new Texture(
-  // project_path + "/content/GeniePreview.png",
-  // Texture::InterpolationMode::Nearest, Texture::InterpolationMode::Nearest);
-  //
-
-  Texture *genieTexture =
-      new Texture(Texture::PixelFormat::RGBA, Texture::ComponentFormat::UInt8,
-                  Vector2i(46, 28), Texture::InterpolationMode::Nearest,
-                  Texture::InterpolationMode::Nearest);
-
-  int w, h, comp;
-  unsigned char *genieImageData =
-      stbi_load((project_path + ("/content/GeniePreview.png")).c_str(), &w, &h,
-                &comp, STBI_rgb_alpha);
-
-  std::cout << (project_path + ("/content/GeniePreview.png")).c_str()
-            << std::endl;
-
-  if (!genieImageData) {
-    std::cerr << "Failed to load image! " << stbi_failure_reason() << std::endl;
-  }
-
-  genieTexture->upload(genieImageData);
-
   ImageView *genieImageView = new ImageView(genieWindow);
-  genieImageView->set_image(genieTexture);
+  genieImageView->set_image(
+      GenieView::content.LoadImageTexture("GeniePreview"));
+
+  // genieImageView->set_background_color(Color(0, 0, 0, 255));
+  // genieImageView->set_theme(Theme
+  // Theme
 
   float scale = 5.0f;
 
@@ -65,9 +43,9 @@ void GenieView::setupScreenContent() {
   screen->set_visible(true);
 }
 
-GenieView::GenieView(nanogui::Screen *screen) {
+GenieView::GenieView(nanogui::Screen *screen, Content content)
+    : screen(screen), content(content) {
   std::cout << "screen constructed" << std::endl;
-  GenieView::screen = screen;
   GenieView::genieWindow = new Window(screen, "genie demo");
 
   setupScreenContent();

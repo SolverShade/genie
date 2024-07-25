@@ -15,3 +15,6 @@
 /home/powerbox/source/repos/genie/build/libs/nanogui/ext/glfw/src/CMakeFiles/glfw.dir
 /home/powerbox/source/repos/genie/build/libs/nanogui/ext/glfw/src/CMakeFiles/edit_cache.dir
 /home/powerbox/source/repos/genie/build/libs/nanogui/ext/glfw/src/CMakeFiles/rebuild_cache.dir
+/home/powerbox/source/repos/genie/build/libs/glad/CMakeFiles/glad.dir
+/home/powerbox/source/repos/genie/build/libs/glad/CMakeFiles/edit_cache.dir
+/home/powerbox/source/repos/genie/build/libs/glad/CMakeFiles/rebuild_cache.dir

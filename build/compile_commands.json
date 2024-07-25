@@ -1,33 +1,38 @@
 [
 {
   "directory": "/home/powerbox/source/repos/genie/build",
-  "command": "/usr/bin/c++ -DNANOGUI_SHARED -DNANOGUI_USE_OPENGL -DNVG_SHARED -I/home/powerbox/source/repos/genie/src -I/home/powerbox/source/repos/genie/libs/nanogui/include -I/home/powerbox/source/repos/genie/libs/nanogui/ext/nanovg/src -I/home/powerbox/source/repos/genie/libs/nanogui/ext/glfw/include -g -std=gnu++17 -o CMakeFiles/genie.dir/src/main.cpp.o -c /home/powerbox/source/repos/genie/src/main.cpp",
+  "command": "/usr/bin/c++ -DNANOGUI_SHARED -DNANOGUI_USE_OPENGL -DNVG_SHARED -I/home/powerbox/source/repos/genie/src -I/home/powerbox/source/repos/genie/libs/glad/include/glad -I/home/powerbox/source/repos/genie/libs/nanogui/include -I/home/powerbox/source/repos/genie/libs/nanogui/ext/nanovg/src -I/home/powerbox/source/repos/genie/libs/nanogui/ext/glfw/include -g -std=gnu++17 -o CMakeFiles/genie.dir/src/main.cpp.o -c /home/powerbox/source/repos/genie/src/main.cpp",
   "file": "/home/powerbox/source/repos/genie/src/main.cpp"
 },
 {
   "directory": "/home/powerbox/source/repos/genie/build",
-  "command": "/usr/bin/c++ -DNANOGUI_SHARED -DNANOGUI_USE_OPENGL -DNVG_SHARED -I/home/powerbox/source/repos/genie/src -I/home/powerbox/source/repos/genie/libs/nanogui/include -I/home/powerbox/source/repos/genie/libs/nanogui/ext/nanovg/src -I/home/powerbox/source/repos/genie/libs/nanogui/ext/glfw/include -g -std=gnu++17 -o CMakeFiles/genie.dir/src/genie/GenieController.cpp.o -c /home/powerbox/source/repos/genie/src/genie/GenieController.cpp",
+  "command": "/usr/bin/c++ -DNANOGUI_SHARED -DNANOGUI_USE_OPENGL -DNVG_SHARED -I/home/powerbox/source/repos/genie/src -I/home/powerbox/source/repos/genie/libs/glad/include/glad -I/home/powerbox/source/repos/genie/libs/nanogui/include -I/home/powerbox/source/repos/genie/libs/nanogui/ext/nanovg/src -I/home/powerbox/source/repos/genie/libs/nanogui/ext/glfw/include -g -std=gnu++17 -o CMakeFiles/genie.dir/src/genie/GenieController.cpp.o -c /home/powerbox/source/repos/genie/src/genie/GenieController.cpp",
   "file": "/home/powerbox/source/repos/genie/src/genie/GenieController.cpp"
 },
 {
   "directory": "/home/powerbox/source/repos/genie/build",
-  "command": "/usr/bin/c++ -DNANOGUI_SHARED -DNANOGUI_USE_OPENGL -DNVG_SHARED -I/home/powerbox/source/repos/genie/src -I/home/powerbox/source/repos/genie/libs/nanogui/include -I/home/powerbox/source/repos/genie/libs/nanogui/ext/nanovg/src -I/home/powerbox/source/repos/genie/libs/nanogui/ext/glfw/include -g -std=gnu++17 -o CMakeFiles/genie.dir/src/genie/GenieModel.cpp.o -c /home/powerbox/source/repos/genie/src/genie/GenieModel.cpp",
+  "command": "/usr/bin/c++ -DNANOGUI_SHARED -DNANOGUI_USE_OPENGL -DNVG_SHARED -I/home/powerbox/source/repos/genie/src -I/home/powerbox/source/repos/genie/libs/glad/include/glad -I/home/powerbox/source/repos/genie/libs/nanogui/include -I/home/powerbox/source/repos/genie/libs/nanogui/ext/nanovg/src -I/home/powerbox/source/repos/genie/libs/nanogui/ext/glfw/include -g -std=gnu++17 -o CMakeFiles/genie.dir/src/genie/GenieModel.cpp.o -c /home/powerbox/source/repos/genie/src/genie/GenieModel.cpp",
   "file": "/home/powerbox/source/repos/genie/src/genie/GenieModel.cpp"
 },
 {
   "directory": "/home/powerbox/source/repos/genie/build",
-  "command": "/usr/bin/c++ -DNANOGUI_SHARED -DNANOGUI_USE_OPENGL -DNVG_SHARED -I/home/powerbox/source/repos/genie/src -I/home/powerbox/source/repos/genie/libs/nanogui/include -I/home/powerbox/source/repos/genie/libs/nanogui/ext/nanovg/src -I/home/powerbox/source/repos/genie/libs/nanogui/ext/glfw/include -g -std=gnu++17 -o CMakeFiles/genie.dir/src/genie/GenieView.cpp.o -c /home/powerbox/source/repos/genie/src/genie/GenieView.cpp",
+  "command": "/usr/bin/c++ -DNANOGUI_SHARED -DNANOGUI_USE_OPENGL -DNVG_SHARED -I/home/powerbox/source/repos/genie/src -I/home/powerbox/source/repos/genie/libs/glad/include/glad -I/home/powerbox/source/repos/genie/libs/nanogui/include -I/home/powerbox/source/repos/genie/libs/nanogui/ext/nanovg/src -I/home/powerbox/source/repos/genie/libs/nanogui/ext/glfw/include -g -std=gnu++17 -o CMakeFiles/genie.dir/src/genie/GenieView.cpp.o -c /home/powerbox/source/repos/genie/src/genie/GenieView.cpp",
   "file": "/home/powerbox/source/repos/genie/src/genie/GenieView.cpp"
 },
 {
   "directory": "/home/powerbox/source/repos/genie/build",
-  "command": "/usr/bin/c++ -DNANOGUI_SHARED -DNANOGUI_USE_OPENGL -DNVG_SHARED -I/home/powerbox/source/repos/genie/src -I/home/powerbox/source/repos/genie/libs/nanogui/include -I/home/powerbox/source/repos/genie/libs/nanogui/ext/nanovg/src -I/home/powerbox/source/repos/genie/libs/nanogui/ext/glfw/include -g -std=gnu++17 -o CMakeFiles/genie.dir/src/graphics/ContentLoader.cpp.o -c /home/powerbox/source/repos/genie/src/graphics/ContentLoader.cpp",
-  "file": "/home/powerbox/source/repos/genie/src/graphics/ContentLoader.cpp"
+  "command": "/usr/bin/c++ -DNANOGUI_SHARED -DNANOGUI_USE_OPENGL -DNVG_SHARED -I/home/powerbox/source/repos/genie/src -I/home/powerbox/source/repos/genie/libs/glad/include/glad -I/home/powerbox/source/repos/genie/libs/nanogui/include -I/home/powerbox/source/repos/genie/libs/nanogui/ext/nanovg/src -I/home/powerbox/source/repos/genie/libs/nanogui/ext/glfw/include -g -std=gnu++17 -o CMakeFiles/genie.dir/src/graphics/Content.cpp.o -c /home/powerbox/source/repos/genie/src/graphics/Content.cpp",
+  "file": "/home/powerbox/source/repos/genie/src/graphics/Content.cpp"
 },
 {
   "directory": "/home/powerbox/source/repos/genie/build",
-  "command": "/usr/bin/c++ -DNANOGUI_SHARED -DNANOGUI_USE_OPENGL -DNVG_SHARED -I/home/powerbox/source/repos/genie/src -I/home/powerbox/source/repos/genie/libs/nanogui/include -I/home/powerbox/source/repos/genie/libs/nanogui/ext/nanovg/src -I/home/powerbox/source/repos/genie/libs/nanogui/ext/glfw/include -g -std=gnu++17 -o CMakeFiles/genie.dir/src/utillities/TextParsing.cpp.o -c /home/powerbox/source/repos/genie/src/utillities/TextParsing.cpp",
+  "command": "/usr/bin/c++ -DNANOGUI_SHARED -DNANOGUI_USE_OPENGL -DNVG_SHARED -I/home/powerbox/source/repos/genie/src -I/home/powerbox/source/repos/genie/libs/glad/include/glad -I/home/powerbox/source/repos/genie/libs/nanogui/include -I/home/powerbox/source/repos/genie/libs/nanogui/ext/nanovg/src -I/home/powerbox/source/repos/genie/libs/nanogui/ext/glfw/include -g -std=gnu++17 -o CMakeFiles/genie.dir/src/utillities/TextParsing.cpp.o -c /home/powerbox/source/repos/genie/src/utillities/TextParsing.cpp",
   "file": "/home/powerbox/source/repos/genie/src/utillities/TextParsing.cpp"
+},
+{
+  "directory": "/home/powerbox/source/repos/genie/build",
+  "command": "/usr/bin/cc -DNANOGUI_SHARED -DNANOGUI_USE_OPENGL -DNVG_SHARED -I/home/powerbox/source/repos/genie/src -I/home/powerbox/source/repos/genie/libs/glad/include/glad -I/home/powerbox/source/repos/genie/libs/nanogui/include -I/home/powerbox/source/repos/genie/libs/nanogui/ext/nanovg/src -I/home/powerbox/source/repos/genie/libs/nanogui/ext/glfw/include -g -o CMakeFiles/genie.dir/libs/glad/src/glad.c.o -c /home/powerbox/source/repos/genie/libs/glad/src/glad.c",
+  "file": "/home/powerbox/source/repos/genie/libs/glad/src/glad.c"
 },
 {
   "directory": "/home/powerbox/source/repos/genie/build/libs/nanogui",
@@ -303,5 +308,15 @@
   "directory": "/home/powerbox/source/repos/genie/build/libs/nanogui/ext/glfw/src",
   "command": "/usr/bin/cc -D_GLFW_BUILD_DLL -D_GLFW_USE_CONFIG_H -I/home/powerbox/source/repos/genie/libs/nanogui/ext/glfw/include -I/home/powerbox/source/repos/genie/libs/nanogui/ext/glfw/src -I/home/powerbox/source/repos/genie/build/libs/nanogui/ext/glfw/src -g -fPIC -march=nehalem -Wall -fvisibility=hidden -o CMakeFiles/glfw_objects.dir/linux_joystick.c.o -c /home/powerbox/source/repos/genie/libs/nanogui/ext/glfw/src/linux_joystick.c",
   "file": "/home/powerbox/source/repos/genie/libs/nanogui/ext/glfw/src/linux_joystick.c"
+},
+{
+  "directory": "/home/powerbox/source/repos/genie/build/libs/glad",
+  "command": "/usr/bin/cc  -I/home/powerbox/source/repos/genie/libs/glad/src -I/home/powerbox/source/repos/genie/libs/glad/include -I/home/powerbox/source/repos/genie/libs/glad/include/glad -g -o CMakeFiles/glad.dir/src/glad.c.o -c /home/powerbox/source/repos/genie/libs/glad/src/glad.c",
+  "file": "/home/powerbox/source/repos/genie/libs/glad/src/glad.c"
+},
+{
+  "directory": "/home/powerbox/source/repos/genie/build/libs/glad",
+  "command": "/usr/bin/c++  -I/home/powerbox/source/repos/genie/libs/glad/src -I/home/powerbox/source/repos/genie/libs/glad/include -I/home/powerbox/source/repos/genie/libs/glad/include/glad -g -std=gnu++17 -o CMakeFiles/glad.dir/build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.o -c /home/powerbox/source/repos/genie/libs/glad/build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp",
+  "file": "/home/powerbox/source/repos/genie/libs/glad/build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp"
 }
 ]

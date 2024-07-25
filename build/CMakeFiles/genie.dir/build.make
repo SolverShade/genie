@@ -125,19 +125,19 @@ CMakeFiles/genie.dir/src/genie/GenieView.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/genie.dir/src/genie/GenieView.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/powerbox/source/repos/genie/src/genie/GenieView.cpp -o CMakeFiles/genie.dir/src/genie/GenieView.cpp.s
 
-CMakeFiles/genie.dir/src/graphics/ContentLoader.cpp.o: CMakeFiles/genie.dir/flags.make
-CMakeFiles/genie.dir/src/graphics/ContentLoader.cpp.o: ../src/graphics/ContentLoader.cpp
-CMakeFiles/genie.dir/src/graphics/ContentLoader.cpp.o: CMakeFiles/genie.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/powerbox/source/repos/genie/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/genie.dir/src/graphics/ContentLoader.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/genie.dir/src/graphics/ContentLoader.cpp.o -MF CMakeFiles/genie.dir/src/graphics/ContentLoader.cpp.o.d -o CMakeFiles/genie.dir/src/graphics/ContentLoader.cpp.o -c /home/powerbox/source/repos/genie/src/graphics/ContentLoader.cpp
+CMakeFiles/genie.dir/src/graphics/Content.cpp.o: CMakeFiles/genie.dir/flags.make
+CMakeFiles/genie.dir/src/graphics/Content.cpp.o: ../src/graphics/Content.cpp
+CMakeFiles/genie.dir/src/graphics/Content.cpp.o: CMakeFiles/genie.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/powerbox/source/repos/genie/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/genie.dir/src/graphics/Content.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/genie.dir/src/graphics/Content.cpp.o -MF CMakeFiles/genie.dir/src/graphics/Content.cpp.o.d -o CMakeFiles/genie.dir/src/graphics/Content.cpp.o -c /home/powerbox/source/repos/genie/src/graphics/Content.cpp
 
-CMakeFiles/genie.dir/src/graphics/ContentLoader.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/genie.dir/src/graphics/ContentLoader.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/powerbox/source/repos/genie/src/graphics/ContentLoader.cpp > CMakeFiles/genie.dir/src/graphics/ContentLoader.cpp.i
+CMakeFiles/genie.dir/src/graphics/Content.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/genie.dir/src/graphics/Content.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/powerbox/source/repos/genie/src/graphics/Content.cpp > CMakeFiles/genie.dir/src/graphics/Content.cpp.i
 
-CMakeFiles/genie.dir/src/graphics/ContentLoader.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/genie.dir/src/graphics/ContentLoader.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/powerbox/source/repos/genie/src/graphics/ContentLoader.cpp -o CMakeFiles/genie.dir/src/graphics/ContentLoader.cpp.s
+CMakeFiles/genie.dir/src/graphics/Content.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/genie.dir/src/graphics/Content.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/powerbox/source/repos/genie/src/graphics/Content.cpp -o CMakeFiles/genie.dir/src/graphics/Content.cpp.s
 
 CMakeFiles/genie.dir/src/utillities/TextParsing.cpp.o: CMakeFiles/genie.dir/flags.make
 CMakeFiles/genie.dir/src/utillities/TextParsing.cpp.o: ../src/utillities/TextParsing.cpp
@@ -153,14 +153,29 @@ CMakeFiles/genie.dir/src/utillities/TextParsing.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/genie.dir/src/utillities/TextParsing.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/powerbox/source/repos/genie/src/utillities/TextParsing.cpp -o CMakeFiles/genie.dir/src/utillities/TextParsing.cpp.s
 
+CMakeFiles/genie.dir/libs/glad/src/glad.c.o: CMakeFiles/genie.dir/flags.make
+CMakeFiles/genie.dir/libs/glad/src/glad.c.o: ../libs/glad/src/glad.c
+CMakeFiles/genie.dir/libs/glad/src/glad.c.o: CMakeFiles/genie.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/powerbox/source/repos/genie/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/genie.dir/libs/glad/src/glad.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/genie.dir/libs/glad/src/glad.c.o -MF CMakeFiles/genie.dir/libs/glad/src/glad.c.o.d -o CMakeFiles/genie.dir/libs/glad/src/glad.c.o -c /home/powerbox/source/repos/genie/libs/glad/src/glad.c
+
+CMakeFiles/genie.dir/libs/glad/src/glad.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/genie.dir/libs/glad/src/glad.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/powerbox/source/repos/genie/libs/glad/src/glad.c > CMakeFiles/genie.dir/libs/glad/src/glad.c.i
+
+CMakeFiles/genie.dir/libs/glad/src/glad.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/genie.dir/libs/glad/src/glad.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/powerbox/source/repos/genie/libs/glad/src/glad.c -o CMakeFiles/genie.dir/libs/glad/src/glad.c.s
+
 # Object files for target genie
 genie_OBJECTS = \
 "CMakeFiles/genie.dir/src/main.cpp.o" \
 "CMakeFiles/genie.dir/src/genie/GenieController.cpp.o" \
 "CMakeFiles/genie.dir/src/genie/GenieModel.cpp.o" \
 "CMakeFiles/genie.dir/src/genie/GenieView.cpp.o" \
-"CMakeFiles/genie.dir/src/graphics/ContentLoader.cpp.o" \
-"CMakeFiles/genie.dir/src/utillities/TextParsing.cpp.o"
+"CMakeFiles/genie.dir/src/graphics/Content.cpp.o" \
+"CMakeFiles/genie.dir/src/utillities/TextParsing.cpp.o" \
+"CMakeFiles/genie.dir/libs/glad/src/glad.c.o"
 
 # External object files for target genie
 genie_EXTERNAL_OBJECTS =
@@ -169,12 +184,13 @@ genie: CMakeFiles/genie.dir/src/main.cpp.o
 genie: CMakeFiles/genie.dir/src/genie/GenieController.cpp.o
 genie: CMakeFiles/genie.dir/src/genie/GenieModel.cpp.o
 genie: CMakeFiles/genie.dir/src/genie/GenieView.cpp.o
-genie: CMakeFiles/genie.dir/src/graphics/ContentLoader.cpp.o
+genie: CMakeFiles/genie.dir/src/graphics/Content.cpp.o
 genie: CMakeFiles/genie.dir/src/utillities/TextParsing.cpp.o
+genie: CMakeFiles/genie.dir/libs/glad/src/glad.c.o
 genie: CMakeFiles/genie.dir/build.make
 genie: libs/nanogui/libnanogui.so
 genie: CMakeFiles/genie.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/powerbox/source/repos/genie/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable genie"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/powerbox/source/repos/genie/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable genie"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/genie.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

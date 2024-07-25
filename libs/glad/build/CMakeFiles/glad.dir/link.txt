@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/glad.dir/src/glad.c.o CMakeFiles/glad.dir/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.o -o glad 

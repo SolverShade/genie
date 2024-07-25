@@ -11,6 +11,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.22.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeSystem.cmake"
+  "../libs/glad/CMakeLists.txt"
   "../libs/nanogui/CMakeLists.txt"
   "../libs/nanogui/ext/glfw/CMake/glfw3.pc.in"
   "../libs/nanogui/ext/glfw/CMake/glfw3Config.cmake.in"
@@ -76,6 +77,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "libs/nanogui/ext/glfw/CMakeFiles/CMakeDirectoryInformation.cmake"
   "libs/nanogui/ext/glfw/src/glfw_config.h"
   "libs/nanogui/ext/glfw/src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "libs/glad/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -89,4 +91,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "libs/nanogui/CMakeFiles/example_icons.dir/DependInfo.cmake"
   "libs/nanogui/ext/glfw/src/CMakeFiles/glfw_objects.dir/DependInfo.cmake"
   "libs/nanogui/ext/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
+  "libs/glad/CMakeFiles/glad.dir/DependInfo.cmake"
   )

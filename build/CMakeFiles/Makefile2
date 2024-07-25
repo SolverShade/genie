@@ -65,16 +65,34 @@ CMAKE_BINARY_DIR = /home/powerbox/source/repos/genie/build
 # The main recursive "all" target.
 all: CMakeFiles/genie.dir/all
 all: libs/nanogui/all
+all: libs/glad/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: libs/nanogui/preinstall
+preinstall: libs/glad/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/genie.dir/clean
 clean: libs/nanogui/clean
+clean: libs/glad/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory libs/glad
+
+# Recursive "all" directory target.
+libs/glad/all: libs/glad/CMakeFiles/glad.dir/all
+.PHONY : libs/glad/all
+
+# Recursive "preinstall" directory target.
+libs/glad/preinstall:
+.PHONY : libs/glad/preinstall
+
+# Recursive "clean" directory target.
+libs/glad/clean: libs/glad/CMakeFiles/glad.dir/clean
+.PHONY : libs/glad/clean
 
 #=============================================================================
 # Directory level rules for directory libs/nanogui
@@ -141,12 +159,12 @@ libs/nanogui/ext/glfw/src/clean: libs/nanogui/ext/glfw/src/CMakeFiles/glfw.dir/c
 CMakeFiles/genie.dir/all: libs/nanogui/CMakeFiles/nanogui.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/genie.dir/build.make CMakeFiles/genie.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/powerbox/source/repos/genie/build/CMakeFiles --progress-num=11,12,13,14,15,16,17 "Built target genie"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/powerbox/source/repos/genie/build/CMakeFiles --progress-num=11,12,13,14,15,16,17,18 "Built target genie"
 .PHONY : CMakeFiles/genie.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/genie.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/powerbox/source/repos/genie/build/CMakeFiles 59
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/powerbox/source/repos/genie/build/CMakeFiles 60
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/genie.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/powerbox/source/repos/genie/build/CMakeFiles 0
 .PHONY : CMakeFiles/genie.dir/rule
@@ -167,7 +185,7 @@ CMakeFiles/genie.dir/clean:
 libs/nanogui/CMakeFiles/nanogui.dir/all: libs/nanogui/ext/glfw/src/CMakeFiles/glfw_objects.dir/all
 	$(MAKE) $(MAKESILENT) -f libs/nanogui/CMakeFiles/nanogui.dir/build.make libs/nanogui/CMakeFiles/nanogui.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/nanogui/CMakeFiles/nanogui.dir/build.make libs/nanogui/CMakeFiles/nanogui.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/powerbox/source/repos/genie/build/CMakeFiles --progress-num=35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70 "Built target nanogui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/powerbox/source/repos/genie/build/CMakeFiles --progress-num=39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74 "Built target nanogui"
 .PHONY : libs/nanogui/CMakeFiles/nanogui.dir/all
 
 # Build rule for subdir invocation for target.
@@ -323,7 +341,7 @@ libs/nanogui/CMakeFiles/example_icons.dir/clean:
 libs/nanogui/ext/glfw/src/CMakeFiles/glfw_objects.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/nanogui/ext/glfw/src/CMakeFiles/glfw_objects.dir/build.make libs/nanogui/ext/glfw/src/CMakeFiles/glfw_objects.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/nanogui/ext/glfw/src/CMakeFiles/glfw_objects.dir/build.make libs/nanogui/ext/glfw/src/CMakeFiles/glfw_objects.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/powerbox/source/repos/genie/build/CMakeFiles --progress-num=19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34 "Built target glfw_objects"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/powerbox/source/repos/genie/build/CMakeFiles --progress-num=23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38 "Built target glfw_objects"
 .PHONY : libs/nanogui/ext/glfw/src/CMakeFiles/glfw_objects.dir/all
 
 # Build rule for subdir invocation for target.
@@ -349,7 +367,7 @@ libs/nanogui/ext/glfw/src/CMakeFiles/glfw_objects.dir/clean:
 libs/nanogui/ext/glfw/src/CMakeFiles/glfw.dir/all: libs/nanogui/ext/glfw/src/CMakeFiles/glfw_objects.dir/all
 	$(MAKE) $(MAKESILENT) -f libs/nanogui/ext/glfw/src/CMakeFiles/glfw.dir/build.make libs/nanogui/ext/glfw/src/CMakeFiles/glfw.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/nanogui/ext/glfw/src/CMakeFiles/glfw.dir/build.make libs/nanogui/ext/glfw/src/CMakeFiles/glfw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/powerbox/source/repos/genie/build/CMakeFiles --progress-num=18 "Built target glfw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/powerbox/source/repos/genie/build/CMakeFiles --progress-num=22 "Built target glfw"
 .PHONY : libs/nanogui/ext/glfw/src/CMakeFiles/glfw.dir/all
 
 # Build rule for subdir invocation for target.
@@ -367,6 +385,32 @@ glfw: libs/nanogui/ext/glfw/src/CMakeFiles/glfw.dir/rule
 libs/nanogui/ext/glfw/src/CMakeFiles/glfw.dir/clean:
 	$(MAKE) $(MAKESILENT) -f libs/nanogui/ext/glfw/src/CMakeFiles/glfw.dir/build.make libs/nanogui/ext/glfw/src/CMakeFiles/glfw.dir/clean
 .PHONY : libs/nanogui/ext/glfw/src/CMakeFiles/glfw.dir/clean
+
+#=============================================================================
+# Target rules for target libs/glad/CMakeFiles/glad.dir
+
+# All Build rule for target.
+libs/glad/CMakeFiles/glad.dir/all:
+	$(MAKE) $(MAKESILENT) -f libs/glad/CMakeFiles/glad.dir/build.make libs/glad/CMakeFiles/glad.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/glad/CMakeFiles/glad.dir/build.make libs/glad/CMakeFiles/glad.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/powerbox/source/repos/genie/build/CMakeFiles --progress-num=19,20,21 "Built target glad"
+.PHONY : libs/glad/CMakeFiles/glad.dir/all
+
+# Build rule for subdir invocation for target.
+libs/glad/CMakeFiles/glad.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/powerbox/source/repos/genie/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/glad/CMakeFiles/glad.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/powerbox/source/repos/genie/build/CMakeFiles 0
+.PHONY : libs/glad/CMakeFiles/glad.dir/rule
+
+# Convenience name for target.
+glad: libs/glad/CMakeFiles/glad.dir/rule
+.PHONY : glad
+
+# clean rule for target.
+libs/glad/CMakeFiles/glad.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/glad/CMakeFiles/glad.dir/build.make libs/glad/CMakeFiles/glad.dir/clean
+.PHONY : libs/glad/CMakeFiles/glad.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

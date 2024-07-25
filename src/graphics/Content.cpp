@@ -1,4 +1,4 @@
-#include <graphics/ContentLoader.hpp>
+#include <graphics/Content.hpp>
 #include <iostream>
 #include <memory>
 #include <nanogui/common.h>
@@ -20,12 +20,8 @@ using std::vector;
 using namespace std;
 using namespace nanogui;
 
-ContentLoader::ContentLoader() { cout << "created content loader" << endl; }
-
-map<string, shared_ptr<Texture>>
-ContentLoader::LoadTextures(NVGcontext *ctx, string contentPath) {
-  map<string, shared_ptr<Texture>> textureMap;
-  std::vector<std::pair<int, std::string>> imageInfos;
+Content::Content(NVGcontext *ctx, string contentPath) {
+  vector<std::pair<int, std::string>> imageInfos;
 
   try {
     imageInfos = load_image_directory(ctx, contentPath);
@@ -33,7 +29,7 @@ ContentLoader::LoadTextures(NVGcontext *ctx, string contentPath) {
     std::cerr << "Warning: " << e.what() << std::endl;
   }
 
-  using ImageHolder = std::unique_ptr<uint8_t[], void (*)(void *)>;
+  using ImageHolder = unique_ptr<uint8_t[], void (*)(void *)>;
   vector<std::pair<Texture, ImageHolder>> m_images;
 
   // Create a Texture instance for each object
@@ -41,22 +37,24 @@ ContentLoader::LoadTextures(NVGcontext *ctx, string contentPath) {
     Vector2i size;
     int n = 0;
     ImageHolder texture_data(stbi_load((imageInfo.second + ".png").c_str(),
-                                       &size.x(), &size.y(), &n, 0),
+                                       &size.x(), &size.y(), &n, 4),
                              stbi_image_free);
     assert(n == 4);
 
-    shared_ptr<Texture> tex = make_shared<Texture>(
-        Texture::PixelFormat::RGBA, Texture::ComponentFormat::UInt8, size,
-        Texture::InterpolationMode::Trilinear,
-        Texture::InterpolationMode::Nearest);
+    Texture *tex =
+        new Texture(Texture::PixelFormat::RGBA, Texture::ComponentFormat::UInt8,
+                    size, Texture::InterpolationMode::Trilinear,
+                    Texture::InterpolationMode::Nearest);
 
     tex->upload(texture_data.get());
     string textureName = TextParsing::GetFileName(imageInfo.second);
-    textureMap[textureName] = tex;
+    Content::imagesMap[textureName] = tex;
 
     cout << "path: " << imageInfo.second << endl;
     cout << "name: " << textureName << endl;
   }
+}
 
-  return textureMap;
+Texture *Content::LoadImageTexture(string fileName) {
+  return Content::imagesMap[fileName];
 }

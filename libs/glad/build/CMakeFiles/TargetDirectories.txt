@@ -1,0 +1,3 @@
+/home/powerbox/source/repos/genie/libs/glad/build/CMakeFiles/glad.dir
+/home/powerbox/source/repos/genie/libs/glad/build/CMakeFiles/edit_cache.dir
+/home/powerbox/source/repos/genie/libs/glad/build/CMakeFiles/rebuild_cache.dir
